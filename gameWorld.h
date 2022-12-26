@@ -9,19 +9,19 @@
 
 class GameWorld{
 
-    sf::Vector2i exitPos;
-    sf::Vector2i playerPos;
-    std::vector<sf::Vector2i> enemyPositions;
-    void setUpInitialState();
-    void setUpEnemyPositions();
-    void setUpTiles();
+    sf::Vector2i exitPos; //position de la sortie //nous on a pas besoin de sortie ?
+    sf::Vector2i playerPos; //position du joueur
+    std::vector<sf::Vector2i> countryPositions; //positions des ennemis
+    void setUpInitialState(); //initialise les positions du joueur, des ennemis et de la sortie
+    void setUpCountryPositions(); //initialise les positions des ennemis
+    void setUpTiles();//initialise les cases
 
 
 
 public:
-    std::vector< std::vector<GameTile *> > tiles;
-    int gridLength;
-    GameWorld();
+    std::vector< std::vector<GameTile *> > tiles; //matrice de pointeurs vers les cases
+    int gridLength; //longueur de la grille
+    GameWorld(); //constructeur
 
 };
 
