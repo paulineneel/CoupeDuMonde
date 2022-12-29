@@ -1,14 +1,12 @@
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
-
-
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include <stdio.h>
 #include <SFML/OpenGL.hpp>
 
 
-int main(){
+int main() {
 
     // Créez une fenêtre SFML
     sf::RenderWindow window(sf::VideoMode(5000, 5000), "Carte du monde");
@@ -44,4 +42,5 @@ int main(){
         //Afficher l'écran
         window.display();
     }
+
 }
