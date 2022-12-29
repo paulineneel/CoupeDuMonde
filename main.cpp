@@ -2,14 +2,10 @@
 #include <stdio.h>
 #include "Game.h"
 
-
-
-
 int main()
 {
     // Init Game Engine
     Game game;
-
 
     // Game loop
     while (game.running()) 

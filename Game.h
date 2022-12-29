@@ -1,10 +1,6 @@
 #pragma once
 
-#include <SFML/Graphics.hpp>
-#include <SFML/OpenGL.hpp>
-#include <SFML/System.hpp>
-#include <SFML/Window.hpp>
-#include <SFML/Audio.hpp>
+#include "Quizz.h"
 
 /* Game engine */
 
@@ -19,6 +15,8 @@ private:
     //Map
     sf::Texture mapTexture;
     sf::Sprite mapSprite;
+    //Quizz
+    Quizz quizz;
 
     //Private Functions
     void initVariables();
@@ -30,6 +28,7 @@ public:
     void pollEvents();
     void update();
     void render();
+    void startQuizz();
 
     //Accessors
     const bool running() const;
