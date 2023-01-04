@@ -19,6 +19,10 @@ public:
     bool isOpen;
     bool quizzCleared;
 
+    //Questions
+    sf::Font textFont;
+    sf::Text textQuestion;
+
     sf::RectangleShape questionBox;
 
     //Functions
@@ -41,7 +45,10 @@ public:
 
     //Functions
     void initVariables();
-    void initQuestionAnswer();
+    void initQuestion();
+    void initAnswer();
+    void initBlock();
+
 
     //YesNoQuestion(std::string qType);
     YesNoQuestion();

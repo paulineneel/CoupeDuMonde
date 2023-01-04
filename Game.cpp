@@ -137,7 +137,7 @@ void Game::updateQuizz()
     if(sf::Mouse::isButtonPressed(sf::Mouse::Left))
     {
         int ind = this->whichQuizzOpen();
-        std::cout << "Quizz open :" << ind << "\n" << std::endl;
+        //std::cout << "Quizz open :" << ind << "\n" << std::endl;
         if (this->allQuizz[ind].answerBox.getGlobalBounds().contains(this->mousePosView))
             {
                 this->allQuizz[ind].closeQuizz();
@@ -171,7 +171,7 @@ void Game::renderQuizz(YesNoQuestion q)
     
     this->window->draw(q.questionBox);
     this->window->draw(q.answerBox);
-    
+    this->window->draw(q.textQuestion); 
 }
 
 void Game::render() //visualizing all the positions, points
@@ -194,6 +194,7 @@ void Game::render() //visualizing all the positions, points
         this->window->draw(this->mapSprite);
         this->renderCountries();
     }
+    
 
     this->window->display();
 }
