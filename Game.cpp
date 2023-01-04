@@ -67,6 +67,20 @@ void Game::initQuizz()
 
 //Functions
 
+int Game::whichQuizzOpen()
+{
+    int ind = -1;
+    for (int i=0; i<allQuizz.size(); i ++)
+    {
+        if(allQuizz[i].isOpen)
+        {
+            ind = i;
+        }
+    }
+
+    return ind;
+}
+
 void Game::pollEvents()
 {
     while(this->window->pollEvent(this->event))
@@ -108,13 +122,27 @@ void Game::updateQuizz()
 {
     for(int i=0; i<this->countries.size(); i++)
     {
-        if(sf::Mouse::isButtonPressed(sf::Mouse::Left)) 
+        if(!this->isOneQuizzOpen)
         {
-            if (this->countries[i].getGlobalBounds().contains(this->mousePosView))
+            if(sf::Mouse::isButtonPressed(sf::Mouse::Left)) 
             {
-                this->allQuizz[i].openQuizz();
+                if (this->countries[i].getGlobalBounds().contains(this->mousePosView))
+                {
+                    this->allQuizz[i].openQuizz();
+                }
             }
         }
+    }
+
+    if(sf::Mouse::isButtonPressed(sf::Mouse::Left))
+    {
+        int ind = this->whichQuizzOpen();
+        std::cout << "Quizz open :" << ind << "\n" << std::endl;
+        if (this->allQuizz[ind].answerBox.getGlobalBounds().contains(this->mousePosView))
+            {
+                this->allQuizz[ind].closeQuizz();
+                this->isOneQuizzOpen = false;
+            }
     }
 
 }
@@ -142,6 +170,7 @@ void Game::renderQuizz(YesNoQuestion q)
 {
     
     this->window->draw(q.questionBox);
+    this->window->draw(q.answerBox);
     
 }
 

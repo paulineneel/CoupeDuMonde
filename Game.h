@@ -29,7 +29,7 @@ private:
 
     //Countries
     std::vector<sf::RectangleShape> countries; 
-    sf::RectangleShape country; //à changer en sprite pour mettre texture
+    sf::RectangleShape country; //à changer en sprite pour mettre texture (dcp les fonctions de bases changent)
     
 
     //Private Functions
@@ -43,6 +43,7 @@ public:
 
     //Functions
     void pollEvents();
+    int whichQuizzOpen();
 
     void updateMousePositions();
     void updateCountries();
