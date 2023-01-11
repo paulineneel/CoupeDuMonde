@@ -20,16 +20,17 @@ private:
     //Map
     sf::Texture mapTexture;
     sf::Sprite mapSprite;
+    
 
     //Game logic
-    int points;
+    int score;
     std::vector<YesNoQuestion> allQuizz;
     YesNoQuestion quizz;
     bool isOneQuizzOpen;
 
     //Countries
     std::vector<sf::RectangleShape> countries; 
-    sf::RectangleShape country; //à changer en sprite pour mettre texture
+    sf::RectangleShape country; //à changer en sprite pour mettre texture (dcp les fonctions de bases changent)
     
 
     //Private Functions
@@ -43,6 +44,8 @@ public:
 
     //Functions
     void pollEvents();
+    int whichQuizzOpen();
+    void resetCountriesColors();
 
     void updateMousePositions();
     void updateCountries();

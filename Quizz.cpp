@@ -28,7 +28,9 @@ void Quizz::closeQuizz()
 YesNoQuestion::YesNoQuestion()
 {
     this->initVariables();
-    this->initQuestionAnswer();
+    this->initQuestion();
+    this->initAnswer();
+    this->initBlock();
 }
 
 YesNoQuestion::~YesNoQuestion()
@@ -40,38 +42,34 @@ YesNoQuestion::~YesNoQuestion()
 
 void YesNoQuestion::initVariables()
 {
-    this->quizzType = "test";
+    this->quizzType = "YesNo Question";
     this->isOpen = false;
     this->quizzCleared = false;
 }
 
-
-void YesNoQuestion::initQuestionAnswer()
+void YesNoQuestion::initQuestion()
 {
-    this->questions.setString("Est-ce qu'il fait beau ?");
-    this->questions.setCharacterSize(26);
-    this->questions.setFillColor(sf::Color::Red);
+    this->textFont.loadFromFile("/Users/paulinetournier/Desktop/main4/C++/projet/CoupeDuMonde/font/07558_CenturyGothic.ttf");
+    this->textQuestion.setFont(this->textFont);
+    this->textQuestion.setString(L"Test question.");
+    this->textQuestion.setCharacterSize(24);
+    this->textQuestion.setFillColor(sf::Color::Red);
+    //this->textQuestion.setStyle(sf::Text::Bold | sf::Text::Underlined);
+    this->textQuestion.setPosition(sf::Vector2f(300.f,100.f));
+}
 
-    this->questionBox.setSize(sf::Vector2f(600.f,800.f));
+void YesNoQuestion::initAnswer()
+{
+
+}
+
+void YesNoQuestion::initBlock()
+{
+    this->questionBox.setSize(sf::Vector2f(300.f,100.f));
     this->questionBox.setFillColor(sf::Color::White);
-    this->questionBox.setPosition(sf::Vector2f(0.f,0.f));
+    this->questionBox.setPosition(sf::Vector2f(250.f,10.f));
 
-    for(int i=0;i<2;i++)
-    {
-        if (i==0)
-        {
-            this->reponse.setString("Oui");
-            this->reponse.setCharacterSize(26);
-            this->reponse.setFillColor(sf::Color::Black);
-            //this->answerBox.push_back(this->reponse);
-        }
-            
-    }
-
-
-    this->answerBox.setSize(sf::Vector2f(100.f,100.f));
+    this->answerBox.setSize(sf::Vector2f(200.f,100.f));
     this->answerBox.setFillColor(sf::Color::White);
-    this->answerBox.setPosition(sf::Vector2f(400.f,300.f));
-
-
+    this->answerBox.setPosition(sf::Vector2f(200.f,400.f));
 }

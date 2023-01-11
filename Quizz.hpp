@@ -18,7 +18,10 @@ public:
     std::string quizzType;
     bool isOpen;
     bool quizzCleared;
-    
+
+    //Questions
+    sf::Font textFont;
+    sf::Text textQuestion;
 
     sf::RectangleShape questionBox;
 
@@ -39,12 +42,12 @@ public:
     //Variables
     std::vector<sf::RectangleShape> answers;
     sf::RectangleShape answerBox;
-    sf::Text questions;
-    sf::Text reponse;
 
     //Functions
     void initVariables();
-    void initQuestionAnswer();
+    void initQuestion();
+    void initAnswer();
+    void initBlock();
 
 
     //YesNoQuestion(std::string qType);
