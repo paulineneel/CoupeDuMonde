@@ -1,5 +1,0 @@
-g++ -c main.cpp 
-g++ -c Game.cpp 
-g++ -c Quizz.cpp
-g++ main.o Game.o Quizz.o -o sfml-app -lsfml-graphics -lsfml-window -lsfml-system
-./sfml-app
