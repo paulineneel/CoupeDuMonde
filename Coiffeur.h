@@ -23,8 +23,14 @@ class Coiffeur {
   void setNom(std::string nom);
   std::string getAdresse() const;
   void setAdresse(std::string adresse);
+  std::string getPays() const;
+  void setPays(std::string pays);
+  std::string getVille() const;
+  void setVille(std::string ville);
   std::vector<CoupeDeCheveux*> getCoupesDeCheveux() const;
   void setCoupesDeCheveux(std::vector<CoupeDeCheveux*> coupesDeCheveux);
+  std::vector<double> getTarifs() const;
+  void setTarifs(std::vector<double> tarifs);
 
   // Fonction virtuelle pure pour obtenir le tarif total des coupes de cheveux proposées par le coiffeur
   virtual double tarifTotal() const = 0;
@@ -33,7 +39,10 @@ class Coiffeur {
   // Champs privés de la classe
   std::string nom_;
   std::string adresse_;
+  std::string pays_;
+  std::string ville_;
   std::vector<CoupeDeCheveux*> coupesDeCheveux_;
+  std::vector<double> tarifs_;
 };
 
 #endif  // COIFFEUR_H
