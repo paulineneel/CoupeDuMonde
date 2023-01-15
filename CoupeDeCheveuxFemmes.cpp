@@ -6,8 +6,8 @@ CoupeDeCheveuxFemmes::CoupeDeCheveuxFemmes() : CoupeDeCheveux()
   this->meches_ = false;
 }
 
-CoupeDeCheveuxFemmes::CoupeDeCheveuxFemmes(std::string longueur, std::string couleur, std::string forme, bool meches)
-    : CoupeDeCheveux(longueur, couleur, forme)
+CoupeDeCheveuxFemmes::CoupeDeCheveuxFemmes(std::string longueur, std::string couleur, std::string forme,double tarif, bool meches)
+    : CoupeDeCheveux(longueur, couleur, forme,tarif)
 {
   this->meches_ = meches;
 }
@@ -35,7 +35,7 @@ std::string CoupeDeCheveuxFemmes::description() const {
 }
 
 double CoupeDeCheveuxFemmes::tarif() const {
-  double tarif = CoupeDeCheveux::tarif();
+  double tarif = CoupeDeCheveux::getTarif();
   if (meches_) {
     tarif += 10;
   }

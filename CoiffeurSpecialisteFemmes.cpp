@@ -3,8 +3,10 @@
 // Constructeurs
 CoiffeurSpecialisteFemmes::CoiffeurSpecialisteFemmes() : Coiffeur() {}
 
-CoiffeurSpecialisteFemmes::CoiffeurSpecialisteFemmes(std::string nom, std::string adresse, std::vector<CoupeDeCheveux*> coupesDeCheveux)
-    : Coiffeur(nom, adresse, coupesDeCheveux) {}
+CoiffeurSpecialisteFemmes::CoiffeurSpecialisteFemmes(std::string nom, std::string adresse, std::string pays, std::string ville, std::vector<CoupeDeCheveux *> coupesDeCheveux)
+  : Coiffeur(nom, adresse, pays,ville, coupesDeCheveux) 
+{
+}
 
 
 // Fonctions

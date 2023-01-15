@@ -7,7 +7,7 @@ class CoupeDeCheveux {
  public:
   // Constructeurs
   CoupeDeCheveux();
-  CoupeDeCheveux(std::string longueur, std::string couleur, std::string forme);
+  CoupeDeCheveux(std::string longueur, std::string couleur, std::string forme,double tarif);
 
   // Destructeur
   ~CoupeDeCheveux();
@@ -19,6 +19,8 @@ class CoupeDeCheveux {
   void setCouleur(std::string couleur);
   std::string getForme() const;
   void setForme(std::string forme);
+  double getTarif() const;
+  void setTarif(double tarif);
 
   // Fonctions
   //descprition
@@ -33,6 +35,7 @@ class CoupeDeCheveux {
     std::string longueur_;
     std::string couleur_;
     std::string forme_;
+    double tarif_;
 };
 
 #endif // COUPE_DE_CHEVEUX_H

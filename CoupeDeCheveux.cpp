@@ -3,11 +3,12 @@
 // Constructeurs et Destructeurs
 CoupeDeCheveux::CoupeDeCheveux() {}
 
-CoupeDeCheveux::CoupeDeCheveux(std::string longueur, std::string couleur, std::string forme)
+CoupeDeCheveux::CoupeDeCheveux(std::string longueur, std::string couleur, std::string forme,double tarif)
 {
   this->longueur_ = longueur;
   this->couleur_ = couleur;
   this->forme_ = forme;
+  this->tarif_ = tarif;
 }
 
 CoupeDeCheveux::~CoupeDeCheveux()
@@ -46,6 +47,15 @@ void CoupeDeCheveux::setForme(std::string forme)
   this->forme_ = forme;
 }
 
+double CoupeDeCheveux::getTarif() const
+{
+  return this->tarif_;
+}
+
+void CoupeDeCheveux::setTarif(double tarif)
+{
+  this->tarif_ = tarif;
+}
 
 // Fonctions
 double CoupeDeCheveux::tarif() const 

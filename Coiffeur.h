@@ -13,7 +13,7 @@ class Coiffeur {
 
   // Constructeur avec initialisation des champs
  
-  Coiffeur(std::string nom, std::string adresse, std::vector<CoupeDeCheveux*> coupesDeCheveux);
+  Coiffeur(std::string nom, std::string adresse,std::string pays,std::string ville, std::vector<CoupeDeCheveux*> coupesDeCheveux);
 
   //Destructeur
   ~Coiffeur();
@@ -29,8 +29,6 @@ class Coiffeur {
   void setVille(std::string ville);
   std::vector<CoupeDeCheveux*> getCoupesDeCheveux() const;
   void setCoupesDeCheveux(std::vector<CoupeDeCheveux*> coupesDeCheveux);
-  std::vector<double> getTarifs() const;
-  void setTarifs(std::vector<double> tarifs);
 
   // Fonction virtuelle pure pour obtenir le tarif total des coupes de cheveux proposées par le coiffeur
   virtual double tarifTotal() const = 0;
@@ -42,7 +40,6 @@ class Coiffeur {
   std::string pays_;
   std::string ville_;
   std::vector<CoupeDeCheveux*> coupesDeCheveux_;
-  std::vector<double> tarifs_;
 };
 
 #endif  // COIFFEUR_H

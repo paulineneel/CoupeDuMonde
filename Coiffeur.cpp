@@ -3,13 +3,14 @@
 // Constructeurs et Destructeur
 Coiffeur::Coiffeur() {}
 
-Coiffeur::Coiffeur(std::string nom, std::string adresse, std::vector<CoupeDeCheveux*> coupesDeCheveux)
+Coiffeur::Coiffeur(std::string nom, std::string adresse, std::string pays, std::string ville, std::vector<CoupeDeCheveux *> coupesDeCheveux)
 {
   this->nom_ = nom;
   this->adresse_ = adresse;
   this->coupesDeCheveux_ = coupesDeCheveux;
+  this->pays_ = pays;
+  this->ville_ = ville;
 }
-
 
 Coiffeur::~Coiffeur()
 {
@@ -67,12 +68,4 @@ void Coiffeur::setCoupesDeCheveux(std::vector<CoupeDeCheveux*> coupesDeCheveux)
   this->coupesDeCheveux_ = coupesDeCheveux;
 }
 
-std::vector<double> Coiffeur::getTarifs() const
-{
-  return this->tarifs_;
-}
 
-void Coiffeur::setTarifs(std::vector<double> tarifs)
-{
-  this->tarifs_ = tarifs;
-}
