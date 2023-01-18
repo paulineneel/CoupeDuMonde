@@ -19,15 +19,11 @@ class CoupeDeCheveux {
   void setCouleur(std::string couleur);
   std::string getForme() const;
   void setForme(std::string forme);
-  double getTarif() const;
+  virtual double getTarif() const = 0;
   void setTarif(double tarif);
 
   // Fonctions
-  //descprition
   virtual std::string description() const = 0;
-
-  //tarif
-  virtual double tarif() const = 0;
 
  protected:
   // Champs privés de la classe

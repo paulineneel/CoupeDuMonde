@@ -58,10 +58,6 @@ void CoupeDeCheveux::setTarif(double tarif)
 }
 
 // Fonctions
-double CoupeDeCheveux::tarif() const 
-{
-  return 0;
-}
 
 std::string CoupeDeCheveux::description() const 
 {

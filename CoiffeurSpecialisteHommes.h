@@ -5,12 +5,14 @@
 
 class CoiffeurSpecialisteHommes : public Coiffeur {
  public:
-  // Constructeurs
+  // Constructeurs et Destructeur
   CoiffeurSpecialisteHommes();
+  CoiffeurSpecialisteHommes(std::string nom, std::string adresse, std::string pays, std::string ville);
   CoiffeurSpecialisteHommes(std::string nom, std::string adresse, std::string pays, std::string ville, std::vector<CoupeDeCheveux*> coupesDeCheveux);
+  ~CoiffeurSpecialisteHommes();
 
   // Redéfinition de la fonction virtuelle
-  double tarifTotal() const override;
+  double tarifTotal(bool meche,bool barbe) const override;
 
 };
 

@@ -59,80 +59,121 @@ int main() {
 
   std::vector<std::vector<std::string>> csv_coiffeurs = transformCSVtoString(filename1,delimiter);
   std::vector<std::vector<std::string>> csv_coiffures = transformCSVtoString(filename2,delimiter);
+
+  std::vector<Coiffeur*> coiffeurHommes;
+  std::vector<Coiffeur*> coiffeurFemmes;
   
   // Création coupes de cheveux
   int ind_csv_coiffure = 1;
-  int ind_csv_coiffeur = 0;
-  std::string Nom = csv_coiffures[ind_csv_coiffure][0]; // nom 1er du coiffeur
-  std::cout << Nom << "\n" << std::endl;
 
-  if (csv_coiffures[ind_csv_coiffure][4] == "F") //coupe femme
-  {
-    std::vector<CoupeDeCheveux*> coupesDeCheveuxFemmes;
-    while(ind_csv_coiffure <57) //ajoute toutes les coupes d'un coiffeur
-    {
-      if (csv_coiffures[ind_csv_coiffure][0] == Nom)
-        coupesDeCheveuxFemmes.push_back(new CoupeDeCheveuxFemmes(
-        csv_coiffures[ind_csv_coiffure][1],csv_coiffures[ind_csv_coiffure][2],
-        csv_coiffures[ind_csv_coiffure][3],std::stof(csv_coiffures[ind_csv_coiffure][5]),false));
+  int nbTotalCoiffure = csv_coiffures.size();
+  int nbCoiffeur = csv_coiffeurs.size();
 
-      ind_csv_coiffure++;
-    } 
 
-    for(int i =0;i<3;i++)//cherche l'indice du coiffeur dans le fichier csv coiffeur
-    {
-      if(csv_coiffeurs[i][0] == Nom){
-        ind_csv_coiffeur=i;
-      }
-    }
-
-    CoiffeurSpecialisteFemmes coiffeurFemmes( //créée le coiffeur
-      csv_coiffeurs[ind_csv_coiffeur][0],csv_coiffeurs[ind_csv_coiffeur][1],csv_coiffeurs[ind_csv_coiffeur][2],
-      csv_coiffeurs[ind_csv_coiffeur][3],coupesDeCheveuxFemmes);
+  for(int i = 1; i< nbCoiffeur;i++ ) //on commence à 1 car 1ere ligne = nom des attributs
+  {     // créer des coiffeurs selon leur specialite
     
-    std::cout << "Coiffeur spécialisé dans les coupes de cheveux pour femmes" << std::endl;
-    std::cout << "- Nom: " << coiffeurFemmes.getNom() << std::endl;
-    std::cout << "- Adresse: " << coiffeurFemmes.getAdresse() << std::endl;
-    std::cout << "- Coupes de cheveux proposées:" << std::endl;
-    for (auto coupeDeCheveux : coiffeurFemmes.getCoupesDeCheveux()) 
+    if(csv_coiffeurs[i][4] == "F")
     {
-        std::cout << "  - " << coupeDeCheveux->description() << " (" << coupeDeCheveux->tarif() << " euros)" << std::endl;
+      coiffeurFemmes.push_back(new CoiffeurSpecialisteFemmes(csv_coiffeurs[i][0],csv_coiffeurs[i][1],csv_coiffeurs[i][2],
+      csv_coiffeurs[i][3]));
     }
-    std::cout << "- Tarif total des coupes de cheveux proposées: " << coiffeurFemmes.tarifTotal() << " euros" << std::endl;
-    std::cout << std::endl;
+    else
+    {
+      coiffeurHommes.push_back(new CoiffeurSpecialisteHommes(csv_coiffeurs[i][0],csv_coiffeurs[i][1],csv_coiffeurs[i][2],
+      csv_coiffeurs[i][3]));
+    }
 
   }
 
-  else{ //coupe homme
-    std::vector<CoupeDeCheveux*> coupesDeCheveuxHommes;
-    while(csv_coiffures[ind_csv_coiffure][0] == Nom) //ajoute toutes les coupes d'un coiffeur
-    {
-      coupesDeCheveuxHommes.push_back(new CoupeDeCheveuxHommes(
-        csv_coiffures[ind_csv_coiffure][1],csv_coiffures[ind_csv_coiffure][2],
-        csv_coiffures[ind_csv_coiffure][3],std::stof(csv_coiffures[ind_csv_coiffure][5]),false));
 
-      ind_csv_coiffure++;
-    } 
+  std::string nom = csv_coiffures[1][0]; // nom 1er du coiffeur
 
-    while(csv_coiffeurs[ind_csv_coiffeur][0] != Nom && ind_csv_coiffeur<=3) //cherche l'indice du coiffeur dans le fichier csv coiffeur
+  while(ind_csv_coiffure < nbTotalCoiffure) //on commence à 1 car 1ere ligne = nom des attributs
+  {
+
+    if (csv_coiffures[ind_csv_coiffure][4] == "F") //coiffeurSpeFemmes
     {
-      ind_csv_coiffeur++;
+      std::vector<CoupeDeCheveux*> coupesDeCheveuxFemmes;
+    
+      while(ind_csv_coiffure < nbTotalCoiffure && csv_coiffures[ind_csv_coiffure][0] == nom) //ajoute toutes les coupes d'un coiffeur
+      {
+        coupesDeCheveuxFemmes.push_back(new CoupeDeCheveuxFemmes(
+            csv_coiffures[ind_csv_coiffure][1],csv_coiffures[ind_csv_coiffure][2],
+            csv_coiffures[ind_csv_coiffure][3],std::stof(csv_coiffures[ind_csv_coiffure][5]),false));
+
+        ind_csv_coiffure++;
+      }
+    
+      //On ajoute les coiffures au coiffeur correspondant
+      for(auto coif : coiffeurFemmes)
+      {
+        if (coif->getNom() == nom)
+        {
+          coif->setCoupesDeCheveux(coupesDeCheveuxFemmes);
+        }
+      }
+    }
+    
+    else
+    {
+      std::vector<CoupeDeCheveux*> coupesDeCheveuxHommes;
+    
+      while(ind_csv_coiffure < nbTotalCoiffure && csv_coiffures[ind_csv_coiffure][0] == nom) //ajoute toutes les coupes d'un coiffeur
+      {
+        coupesDeCheveuxHommes.push_back(new CoupeDeCheveuxFemmes(
+            csv_coiffures[ind_csv_coiffure][1],csv_coiffures[ind_csv_coiffure][2],
+            csv_coiffures[ind_csv_coiffure][3],std::stof(csv_coiffures[ind_csv_coiffure][5]),false));
+
+        ind_csv_coiffure++;
+      }
+
+      //On ajoute les coiffures au coiffeur correspondant
+      for(auto coif : coiffeurHommes)
+      {
+        if (coif->getNom() == nom)
+        {
+          coif->setCoupesDeCheveux(coupesDeCheveuxHommes);
+        }
+      }
     }
 
-    CoiffeurSpecialisteHommes coiffeurHommes( //créée le coiffeur
-      csv_coiffeurs[ind_csv_coiffeur][0],csv_coiffeurs[ind_csv_coiffeur][0],csv_coiffeurs[ind_csv_coiffeur][0],
-      csv_coiffeurs[ind_csv_coiffeur][0],coupesDeCheveuxHommes);
+    if(ind_csv_coiffure<nbTotalCoiffure)
+      nom = csv_coiffures[ind_csv_coiffure][0];
+  }
 
-    std::cout << "Coiffeur spécialisé dans les coupes de cheveux pour hommes" << std::endl;
-    std::cout << "- Nom: " << coiffeurHommes.getNom() << std::endl;
-    std::cout << "- Adresse: " << coiffeurHommes.getAdresse() << std::endl;
+    
+  for(auto coiffeurF : coiffeurFemmes)
+  {
+    std::cout << "Coiffeur spécialisé dans les coupes de cheveux pour femmes" << std::endl;
+    std::cout << "- Nom: " << coiffeurF->getNom() << std::endl;
+    std::cout << "- Adresse: " << coiffeurF->getPays() << std::endl;
+    std::cout << "- Adresse: " << coiffeurF->getVille() << std::endl;
+    std::cout << "- Adresse: " << coiffeurF->getAdresse() << std::endl;
     std::cout << "- Coupes de cheveux proposées:" << std::endl;
-    for (auto coupeDeCheveux : coiffeurHommes.getCoupesDeCheveux()) {
-      std::cout << "  - " << coupeDeCheveux->description() << " (" << coupeDeCheveux->tarif() << " euros)" << std::endl;
+    for (auto coupeDeCheveux : coiffeurF->getCoupesDeCheveux()) 
+    {
+        std::cout << "  - " << coupeDeCheveux->description() << " (" << coupeDeCheveux->getTarif() << " euros)" << std::endl;
+        //std::cout << "- Tarif total de la coupe: " << coiffeurF->tarifTotal(true,false) << " euros" << std::endl;
     }
-    std::cout << "- Tarif total des coupes de cheveux proposées: " << coiffeurHommes.tarifTotal() << " euros" << std::endl;
+      
     std::cout << std::endl;
+  }
 
+  
+  for(auto coiffeurH : coiffeurHommes)
+  {
+    std::cout << "Coiffeur spécialisé dans les coupes de cheveux pour hommes" << std::endl;
+    std::cout << "- Nom: " << coiffeurH->getNom() << std::endl;
+    std::cout << "- Adresse: " << coiffeurH->getPays() << std::endl;
+    std::cout << "- Adresse: " << coiffeurH->getVille() << std::endl;
+    std::cout << "- Adresse: " << coiffeurH->getAdresse() << std::endl;
+    std::cout << "- Coupes de cheveux proposées:" << std::endl;
+    for (auto coupeDeCheveux : coiffeurH->getCoupesDeCheveux()) {
+      std::cout << "  - " << coupeDeCheveux->description() << " (" << coupeDeCheveux->getTarif() << " euros)" << std::endl;
+    }
+    std::cout << "- Tarif total des coupes de cheveux proposées: " << coiffeurH->tarifTotal(false,false) << " euros" << std::endl;
+    std::cout << std::endl;
   }
 
  

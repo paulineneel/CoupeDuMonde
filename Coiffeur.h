@@ -8,19 +8,17 @@
 
 class Coiffeur {
  public:
-  // Constructeur par défaut
+  // Constructeur 
   Coiffeur();
-
-  // Constructeur avec initialisation des champs
- 
+  Coiffeur(std::string nom, std::string adresse,std::string pays,std::string ville);
   Coiffeur(std::string nom, std::string adresse,std::string pays,std::string ville, std::vector<CoupeDeCheveux*> coupesDeCheveux);
 
   //Destructeur
   ~Coiffeur();
 
-  // Accesseurs et mutateurs pour les champs
+  // Accesseurs et mutateurs pour les champs 
   std::string getNom() const;
-  void setNom(std::string nom);
+  void setNom(std::string nom); 
   std::string getAdresse() const;
   void setAdresse(std::string adresse);
   std::string getPays() const;
@@ -31,7 +29,7 @@ class Coiffeur {
   void setCoupesDeCheveux(std::vector<CoupeDeCheveux*> coupesDeCheveux);
 
   // Fonction virtuelle pure pour obtenir le tarif total des coupes de cheveux proposées par le coiffeur
-  virtual double tarifTotal() const = 0;
+  virtual double tarifTotal(bool meche,bool barbe) const = 0;
 
  protected:
   // Champs privés de la classe

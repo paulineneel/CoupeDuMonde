@@ -12,6 +12,9 @@ CoupeDeCheveuxFemmes::CoupeDeCheveuxFemmes(std::string longueur, std::string cou
   this->meches_ = meches;
 }
 
+CoupeDeCheveuxFemmes::~CoupeDeCheveuxFemmes()
+{
+}
 
 // Accesseur et mutateur
 bool CoupeDeCheveuxFemmes::getMeches() const {
@@ -34,7 +37,7 @@ std::string CoupeDeCheveuxFemmes::description() const {
   return description;
 }
 
-double CoupeDeCheveuxFemmes::tarif() const {
+double CoupeDeCheveuxFemmes::getTarif() const {
   double tarif = CoupeDeCheveux::getTarif();
   if (meches_) {
     tarif += 10;
