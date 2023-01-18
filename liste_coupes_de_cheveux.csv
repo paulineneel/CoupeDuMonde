@@ -1,0 +1,57 @@
+coiffeur;longueur;couleur;forme;hommeOufemme;tarif
+Jane Harry;court;roux;carré lisse;F;30.0
+Jane Harry;court;roux;carré ondulé;F;30.0
+Jane Harry;court;roux;carré bouclé;F;30.0
+Jane Harry;court;roux;pixie cut;F;30.0
+Jane Harry;court;blond;carré lisse;F;30.0
+Jane Harry;court;blond;carré bouclé;F;30.0
+Jane Harry;court;blond;carré ondulé;F;30.0
+Jane Harry;court;blond;pixie cut;F;30.0
+Jane Harry;court;brun;carré lisse;F;30.0
+Jane Harry;court;brun;carré ondulé;F;30.0
+Jane Harry;court;brun;carré bouclé;F;30.0
+Jane Harry;court;brun;pixie cut;F;30.0
+Jane Harry;court;noir;carré lisse;F;30.0
+Jane Harry;court;noir;carré ondulé;F;30.0
+Jane Harry;court;noir;carré bouclé;F;30.0
+Jane Harry;court;noir;pixie cut;F;30.0
+Jane Harry;long;roux;dégradé lisse;F;32.0
+Jane Harry;long;roux;dégradé ondulé;F;32.0
+Jane Harry;long;roux;dégradé bouclé;F;32.0
+Jane Harry;long;blond;dégradé lisse;F;32.0
+Jane Harry;long;blond;dégradé ondulé;F;32.0
+Jane Harry;long;blond;dégradé bouclé;F;32.0
+Jane Harry;long;brun;dégradé lisse;F;32.0
+Jane Harry;long;brun;dégradé ondulé;F;32.0
+Jane Harry;long;brun;dégradé bouclé;F;32.0
+Jane Harry;long;noir;dégradé lisse;F;32.0
+Jane Harry;long;noir;dégradé ondulé;F;32.0
+Jane Harry;long;noir;dégradé bouclé;F;32.0
+Jane Harry;mi-long;roux;frange rideau;F;28.0
+Jane Harry;mi-long;blond;frange rideau;F;28.0
+Jane Harry;mi-long;brun;frange rideau;F;28.0
+Jane Harry;mi-long;noir;frange rideau;F;28.0
+Matteo Cattaneo;long;roux;lisse;H;10.0
+Matteo Cattaneo;long;blond;ondulé;H;10.0
+Matteo Cattaneo;long;brun;bouclé;H;10.0
+Matteo Cattaneo;long;noir;lisse;H;10.0
+Matteo Cattaneo;court;roux;lisse;H;12.0
+Matteo Cattaneo;court;blond;ondulé;H;12.0
+Matteo Cattaneo;court;brun;bouclé;H;12.0
+Matteo Cattaneo;court;noir;lisse;H;12.0
+Matteo Cattaneo;mi-long;roux;lisse;H;10.0
+Matteo Cattaneo;mi-long;blond;ondulé;H;10.0
+Matteo Cattaneo;mi-long;brun;bouclé;H;10.0
+Matteo Cattaneo;mi-long;noir;lisse;H;10.0
+Mary Gnocchi;court;roux;pixie cut;F;30.0
+Mary Gnocchi;court;roux;wolf cut;F;32.0
+Mary Gnocchi;court;roux;bob vagué;F;29.0
+Mary Gnocchi;court;blond;pixie cut;F;30.0
+Mary Gnocchi;court;blond;wolf cut;F;32.0
+Mary Gnocchi;court;blond;bob vagué;F;29.0
+Mary Gnocchi;court;brun;pixie cut;F;30.0
+Mary Gnocchi;court;brun;wolf cut;F;32.0
+Mary Gnocchi;court;brun;bob vagué;F;29.0
+Mary Gnocchi;court;noir;pixie cut;F;30.0
+Mary Gnocchi;court;noir;wolf cut;F;32.0
+Mary Gnocchi;court;noir;bob vagué;F;29.0
