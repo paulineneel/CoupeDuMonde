@@ -3,6 +3,14 @@
 // Constructeurs et Destructeur
 Coiffeur::Coiffeur() {}
 
+Coiffeur::Coiffeur(std::string nom, std::string adresse, std::string pays, std::string ville)
+{
+  this->nom_ = nom;
+  this->adresse_ = adresse;
+  this->pays_ = pays;
+  this->ville_ = ville;
+}
+
 Coiffeur::Coiffeur(std::string nom, std::string adresse, std::string pays, std::string ville, std::vector<CoupeDeCheveux *> coupesDeCheveux)
 {
   this->nom_ = nom;

@@ -5,9 +5,10 @@
 
 class CoupeDeCheveuxFemmes : public CoupeDeCheveux {
  public:
-  // Constructeurs
+  // Constructeurs et Destructeurs
   CoupeDeCheveuxFemmes();
   CoupeDeCheveuxFemmes(std::string longueur, std::string couleur, std::string forme,double tarif, bool meches);
+  ~CoupeDeCheveuxFemmes();
 
   // Accesseur et mutateur pour le champ meches_
   bool getMeches() const;
@@ -15,10 +16,10 @@ class CoupeDeCheveuxFemmes : public CoupeDeCheveux {
 
   // Redéfinition des fonctions virtuelles
   std::string description() const override;
-  double tarif() const override;
+  double getTarif() const override;
 
  private:
- 
+
   bool meches_;
 };
 

@@ -3,17 +3,25 @@
 // Constructeurs
 CoiffeurSpecialisteFemmes::CoiffeurSpecialisteFemmes() : Coiffeur() {}
 
+CoiffeurSpecialisteFemmes::CoiffeurSpecialisteFemmes(std::string nom, std::string adresse, std::string pays, std::string ville)
+  : Coiffeur(nom, adresse, pays,ville)
+{
+}
+
 CoiffeurSpecialisteFemmes::CoiffeurSpecialisteFemmes(std::string nom, std::string adresse, std::string pays, std::string ville, std::vector<CoupeDeCheveux *> coupesDeCheveux)
   : Coiffeur(nom, adresse, pays,ville, coupesDeCheveux) 
 {
 }
 
+CoiffeurSpecialisteFemmes::~CoiffeurSpecialisteFemmes()
+{
+}
 
 // Fonctions
-double CoiffeurSpecialisteFemmes::tarifTotal() const {
+double CoiffeurSpecialisteFemmes::tarifTotal(bool meche,bool barbe) const {
   double tarifTotal = 0;
-  for (auto coupeDeCheveux : coupesDeCheveux_) {
-    tarifTotal += coupeDeCheveux->tarif();
+  if (meche) {
+    tarifTotal += 0;
   }
   return tarifTotal;
 }

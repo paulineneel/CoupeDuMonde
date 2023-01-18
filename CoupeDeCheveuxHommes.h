@@ -5,9 +5,10 @@
 
 class CoupeDeCheveuxHommes : public CoupeDeCheveux {
  public:
-  // Constructeurs
+  // Constructeurs et Destructeurs
   CoupeDeCheveuxHommes();
   CoupeDeCheveuxHommes(std::string longueur, std::string couleur, std::string forme,double tarif, bool barbe);
+  ~CoupeDeCheveuxHommes();
 
   // Accesseur et mutateur pour le champ barbe_
   bool getBarbe() const;
@@ -15,7 +16,7 @@ class CoupeDeCheveuxHommes : public CoupeDeCheveux {
 
   // Redéfinition des fonctions virtuelles
   std::string description() const override;
-  double tarif() const override;
+  double getTarif() const override;
 
  private:
  

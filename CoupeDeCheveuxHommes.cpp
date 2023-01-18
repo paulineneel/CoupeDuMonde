@@ -12,6 +12,9 @@ CoupeDeCheveuxHommes::CoupeDeCheveuxHommes(std::string longueur, std::string cou
   this->barbe_ = barbe;
 }
 
+CoupeDeCheveuxHommes::~CoupeDeCheveuxHommes()
+{
+}
 
 // Accesseur et mutateur
 bool CoupeDeCheveuxHommes::getBarbe() const {
@@ -34,7 +37,7 @@ std::string CoupeDeCheveuxHommes::description() const {
   return description;
 }
 
-double CoupeDeCheveuxHommes::tarif() const {
+double CoupeDeCheveuxHommes::getTarif() const {
   double tarif = CoupeDeCheveux::getTarif();
   if (barbe_) {
     tarif += 5;
