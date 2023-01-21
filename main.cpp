@@ -9,7 +9,7 @@
 #include <fstream>
 #include <vector>
 #include <sstream>
-#include <map>
+#include <set>
 
 std::string readFileIntoString(const std::string& path) {
     auto ss = std::ostringstream{};
@@ -51,6 +51,18 @@ std::vector<std::vector<std::string>> transformCSVtoString(std::string filename,
   return csv_contents;
 }
 
+bool findInVector(std::vector<std::vector<std::string>> vect, int indSearch, std::string x)
+{
+  bool found = false;
+  for(auto iterator : vect)
+  {
+    if(iterator[indSearch] == x)
+      found = true;
+  }
+
+  return found;
+}
+
 int main() {
   // Lecture fichiers csv
   std::string filename1("liste_coiffeurs.csv");
@@ -63,13 +75,12 @@ int main() {
   std::vector<Coiffeur*> coiffeurHommes;
   std::vector<Coiffeur*> coiffeurFemmes;
   
-  // Création coupes de cheveux
   int ind_csv_coiffure = 1;
 
   int nbTotalCoiffure = csv_coiffures.size();
   int nbCoiffeur = csv_coiffeurs.size();
 
-
+  // Création des coiffeurs
   for(int i = 1; i< nbCoiffeur;i++ ) //on commence à 1 car 1ere ligne = nom des attributs
   {     // créer des coiffeurs selon leur specialite
     
@@ -86,6 +97,7 @@ int main() {
 
   }
 
+  // Création des coupes proposées par chaque coiffeur
 
   std::string nom = csv_coiffures[1][0]; // nom 1er du coiffeur
 
@@ -142,7 +154,45 @@ int main() {
       nom = csv_coiffures[ind_csv_coiffure][0];
   }
 
-    
+  // Fin création
+
+  //Début appli
+  std::string genreUtilisateur;
+  std::string paysUtilisateur;
+  std::string villeUtilisateur;
+  std::set<std::string> coupesDispo;
+
+  std::cout << "Bienvenue sur Coupes du monde\n" << "L'appli des coupes INTER PLANET HAIR\n" <<std::endl;
+  std::cout << "Entrer votre genre (H ou F)" << std::endl;
+  std::cin >> genreUtilisateur;
+  if (genreUtilisateur != "F"  && genreUtilisateur != "H")
+  {
+    std::cout << "ERREUR genre non reconnu\n\n" << "Veuillez relancer l'appli !"  << std::endl;
+    return 0;
+  }
+
+  std::cout << "\nDans quel pays vous situez vous ?" << std::endl;
+  std::cin >> paysUtilisateur;
+  if (!findInVector(csv_coiffeurs,2,paysUtilisateur)){
+    std::cout << "ERREUR pays non disponible\n\n" << std::endl; 
+    return 0;
+  }
+
+  std::cout << "\nDans quel ville vous situez vous ?" << std::endl;
+  std::cin >> villeUtilisateur;
+  if (!findInVector(csv_coiffeurs,3,villeUtilisateur)){ // test imbriqué à faire
+    std::cout << "ERREUR ville non disponible\n\n" << std::endl; 
+    return 0;
+  }
+  
+  
+  //Afficher coupes dispo avec un set
+  //choix coupe
+  //comparateur prix 
+
+
+
+  /*
   for(auto coiffeurF : coiffeurFemmes)
   {
     std::cout << "Coiffeur spécialisé dans les coupes de cheveux pour femmes" << std::endl;
@@ -175,7 +225,7 @@ int main() {
     std::cout << "- Tarif total des coupes de cheveux proposées: " << coiffeurH->tarifTotal(false,false) << " euros" << std::endl;
     std::cout << std::endl;
   }
-
+  */
  
   return 0;
 }
