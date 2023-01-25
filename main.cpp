@@ -117,7 +117,7 @@ int main() {
   while(ind_csv_coiffure < nbTotalCoiffure) //on commence à 1 car 1ere ligne = nom des attributs
   {
 
-    if (csv_coiffures[ind_csv_coiffure][4] == "F") //coiffeurSpeFemmes
+    if (csv_coiffures[ind_csv_coiffure][3] == "F") //coiffeurSpeFemmes
     {
       std::vector<CoupeDeCheveux*> coupesDeCheveuxFemmes;
     
@@ -125,7 +125,7 @@ int main() {
       {
         coupesDeCheveuxFemmes.push_back(new CoupeDeCheveuxFemmes(
             csv_coiffures[ind_csv_coiffure][1],csv_coiffures[ind_csv_coiffure][2],
-            csv_coiffures[ind_csv_coiffure][3],std::stof(csv_coiffures[ind_csv_coiffure][5]),false));
+            std::stof(csv_coiffures[ind_csv_coiffure][4]),false));
 
         ind_csv_coiffure++;
       }
@@ -148,7 +148,7 @@ int main() {
       {
         coupesDeCheveuxHommes.push_back(new CoupeDeCheveuxFemmes(
             csv_coiffures[ind_csv_coiffure][1],csv_coiffures[ind_csv_coiffure][2],
-            csv_coiffures[ind_csv_coiffure][3],std::stof(csv_coiffures[ind_csv_coiffure][5]),false));
+            std::stof(csv_coiffures[ind_csv_coiffure][4]),false));
 
         ind_csv_coiffure++;
       }
@@ -173,7 +173,6 @@ int main() {
   std::string genreUtilisateur;
   std::string paysUtilisateur;
   std::string villeUtilisateur;
-  std::set<std::string> coupesDispo;
 
   std::cout << "Bienvenue sur Coupes du monde\n" << "L'appli des coupes INTER PLANET HAIR\n" <<std::endl;
   std::cout << "Entrer votre genre (H ou F)" << std::endl;
@@ -208,9 +207,12 @@ int main() {
         if(coifFemme->getNom() == coif)
         {
           for(auto coupe : coifFemme->getCoupesDeCheveux())
+          {
             coupeDispo.insert(coupe->getForme());
+          }
         }
   }
+
 
   if (genreUtilisateur == "H")
   {
@@ -238,8 +240,9 @@ int main() {
   }
 
   std::string coupeChoisie;
-  std::cout << "\n Choix de coupe " << std::endl;
-  std::cin >> coupeChoisie;
+  std::cout << "\n Choix de coupe ";
+  std::getline(std::cin, coupeChoisie);
+  std::cout << coupeChoisie;
 
   if (genreUtilisateur == "F")
   {
@@ -247,24 +250,34 @@ int main() {
       for(auto coifFemme : coiffeurFemmes)
         if(coifFemme->getNom() == coif)
         {
-          std::cout << coif << " ";
           for(auto coupe : coifFemme->getCoupesDeCheveux())
           {
-            
-            //std::cout << coupeChoisie << "=?" << coupe->getForme() << std::endl;
+            std::cout << coupeChoisie << "=?" << coupe->getForme();
             if (coupe->getForme() == coupeChoisie)
             {
-              std::cout << coupeChoisie << " = " << coupe->getTarif() << " euros" << std::endl;
+              std::cout << coif << " : " << coupeChoisie << " = " << coupe->getTarif() << " euros" << std::endl;
+            }
+          }
+            
+        }
+  }
+  else
+  {
+    for(auto coif : coiffeursDispo)
+      for(auto coifHomme : coiffeurHommes)
+        if(coifHomme->getNom() == coif)
+        {
+          for(auto coupe : coifHomme->getCoupesDeCheveux())
+          {
+            if (coupe->getForme() == coupeChoisie)
+            {
+              std::cout << coif << " : " << coupeChoisie << " = " << coupe->getTarif() << " euros" << std::endl;
             }
           }
             
         }
   }
 
-
-  
-  //choix coupe
-  //comparateur prix 
 
 
 

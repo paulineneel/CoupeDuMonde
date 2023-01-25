@@ -7,7 +7,7 @@ class CoupeDeCheveux {
  public:
   // Constructeurs
   CoupeDeCheveux();
-  CoupeDeCheveux(std::string longueur, std::string couleur, std::string forme,double tarif);
+  CoupeDeCheveux(std::string longueur,std::string forme,double tarif);
 
   // Destructeur
   ~CoupeDeCheveux();
@@ -15,8 +15,6 @@ class CoupeDeCheveux {
   // Accesseurs et mutateurs pour les champs
   std::string getLongueur() const;
   void setLongueur(std::string longueur);
-  std::string getCouleur() const;
-  void setCouleur(std::string couleur);
   std::string getForme() const;
   void setForme(std::string forme);
   virtual double getTarif() const = 0;
@@ -29,7 +27,6 @@ class CoupeDeCheveux {
   // Champs privés de la classe
  
     std::string longueur_;
-    std::string couleur_;
     std::string forme_;
     double tarif_;
 };

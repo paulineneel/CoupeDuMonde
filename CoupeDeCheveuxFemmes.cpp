@@ -6,8 +6,8 @@ CoupeDeCheveuxFemmes::CoupeDeCheveuxFemmes() : CoupeDeCheveux()
   this->meches_ = false;
 }
 
-CoupeDeCheveuxFemmes::CoupeDeCheveuxFemmes(std::string longueur, std::string couleur, std::string forme,double tarif, bool meches)
-    : CoupeDeCheveux(longueur, couleur, forme,tarif)
+CoupeDeCheveuxFemmes::CoupeDeCheveuxFemmes(std::string longueur, std::string forme,double tarif, bool meches)
+    : CoupeDeCheveux(longueur, forme,tarif)
 {
   this->meches_ = meches;
 }

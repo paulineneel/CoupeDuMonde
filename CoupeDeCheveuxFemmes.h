@@ -7,7 +7,7 @@ class CoupeDeCheveuxFemmes : public CoupeDeCheveux {
  public:
   // Constructeurs et Destructeurs
   CoupeDeCheveuxFemmes();
-  CoupeDeCheveuxFemmes(std::string longueur, std::string couleur, std::string forme,double tarif, bool meches);
+  CoupeDeCheveuxFemmes(std::string longueur, std::string forme,double tarif, bool meches);
   ~CoupeDeCheveuxFemmes();
 
   // Accesseur et mutateur pour le champ meches_
