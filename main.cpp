@@ -70,9 +70,10 @@ std::vector<std::string> indInVector(std::vector<std::vector<std::string>> vect,
   {
     if(iterator[indSearch] == pays)
       if(iterator[indSearch + 1] == ville)
-        rep.push_back(iterator[indSearch]);
+        rep.push_back(iterator[0]);
   }
 
+  return rep;
 }
 
 int main() {
@@ -198,9 +199,70 @@ int main() {
   }
   
   std::set<std::string> coupeDispo;
+  std::vector<std::string> coiffeursDispo = indInVector(csv_coiffeurs,2,villeUtilisateur,paysUtilisateur);
 
-  //if(findInVector(csv_coiffeurs,))
-  //Afficher coupes dispo avec un set
+  if (genreUtilisateur == "F")
+  {
+    for(auto coif : coiffeursDispo)
+      for(auto coifFemme : coiffeurFemmes)
+        if(coifFemme->getNom() == coif)
+        {
+          for(auto coupe : coifFemme->getCoupesDeCheveux())
+            coupeDispo.insert(coupe->getForme());
+        }
+  }
+
+  if (genreUtilisateur == "H")
+  {
+    for(auto coif : coiffeursDispo)
+      for(auto coifHomme : coiffeurHommes)
+        if(coifHomme->getNom() == coif)
+        {
+          for(auto coupe : coifHomme->getCoupesDeCheveux())
+            coupeDispo.insert(coupe->getForme());
+        }
+  }
+
+  std::cout << "\nCoupes disponibles à " << villeUtilisateur << " " << paysUtilisateur << " pour ";
+
+  if(genreUtilisateur == "F")
+    std::cout << "Femme:" << std::endl;
+  
+  else
+    std::cout << "Homme:" << std::endl;
+
+
+  for(auto coupeD : coupeDispo)
+  {
+    std::cout << coupeD << std::endl;
+  }
+
+  std::string coupeChoisie;
+  std::cout << "\n Choix de coupe " << std::endl;
+  std::cin >> coupeChoisie;
+
+  if (genreUtilisateur == "F")
+  {
+    for(auto coif : coiffeursDispo)
+      for(auto coifFemme : coiffeurFemmes)
+        if(coifFemme->getNom() == coif)
+        {
+          std::cout << coif << " ";
+          for(auto coupe : coifFemme->getCoupesDeCheveux())
+          {
+            
+            //std::cout << coupeChoisie << "=?" << coupe->getForme() << std::endl;
+            if (coupe->getForme() == coupeChoisie)
+            {
+              std::cout << coupeChoisie << " = " << coupe->getTarif() << " euros" << std::endl;
+            }
+          }
+            
+        }
+  }
+
+
+  
   //choix coupe
   //comparateur prix 
 
