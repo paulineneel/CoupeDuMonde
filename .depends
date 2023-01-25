@@ -1,0 +1,13 @@
+CoupeDeCheveuxHommes.o: CoupeDeCheveuxHommes.cpp CoupeDeCheveuxHommes.h \
+ CoupeDeCheveux.h
+CoiffeurSpecialisteHommes.o: CoiffeurSpecialisteHommes.cpp \
+ CoiffeurSpecialisteHommes.h Coiffeur.h CoupeDeCheveux.h
+CoupeDeCheveuxFemmes.o: CoupeDeCheveuxFemmes.cpp CoupeDeCheveuxFemmes.h \
+ CoupeDeCheveux.h
+Coiffeur.o: Coiffeur.cpp Coiffeur.h CoupeDeCheveux.h
+CoupeDeCheveux.o: CoupeDeCheveux.cpp CoupeDeCheveux.h
+CoiffeurSpecialisteFemmes.o: CoiffeurSpecialisteFemmes.cpp \
+ CoiffeurSpecialisteFemmes.h Coiffeur.h CoupeDeCheveux.h
+main.o: main.cpp CoupeDeCheveux.h CoupeDeCheveuxHommes.h \
+ CoupeDeCheveuxFemmes.h Coiffeur.h CoiffeurSpecialisteHommes.h \
+ CoiffeurSpecialisteFemmes.h
