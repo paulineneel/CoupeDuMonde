@@ -63,6 +63,18 @@ bool findInVector(std::vector<std::vector<std::string>> vect, int indSearch, std
   return found;
 }
 
+std::vector<std::string> indInVector(std::vector<std::vector<std::string>> vect, int indSearch, std::string ville, std::string pays)
+{
+  std::vector<std::string> rep;
+  for(auto iterator : vect)
+  {
+    if(iterator[indSearch] == pays)
+      if(iterator[indSearch + 1] == ville)
+        rep.push_back(iterator[indSearch]);
+  }
+
+}
+
 int main() {
   // Lecture fichiers csv
   std::string filename1("liste_coiffeurs.csv");
@@ -185,10 +197,13 @@ int main() {
     return 0;
   }
   
-  
+  std::set<std::string> coupeDispo;
+
+  //if(findInVector(csv_coiffeurs,))
   //Afficher coupes dispo avec un set
   //choix coupe
   //comparateur prix 
+
 
 
 
