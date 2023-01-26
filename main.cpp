@@ -87,7 +87,7 @@ std::vector<std::string> indInVector(std::vector<std::vector<std::string>> vect,
   /*
   *   @return vector<string>
   *   
-  *   renvoie un vecteur des noms de coiffeurs
+  *   renvoie un vecteur des premiers éléments des vecteurs de vect qui contiennent ville et pays
   * 
   */
 
@@ -119,7 +119,8 @@ int main() {
   int nbTotalCoiffure = csv_coiffures.size();
   int nbCoiffeur = csv_coiffeurs.size();
 
-  // Création des coiffeurs
+  /***** Création des coiffeurs *****/
+
   for(int i = 1; i< nbCoiffeur;i++ ) //on commence à 1 car 1ere ligne = nom des attributs
   {     // créer des coiffeurs selon leur specialite
     
@@ -136,7 +137,7 @@ int main() {
 
   }
 
-  // Création des coupes proposées par chaque coiffeur
+  /***** Création des coupes proposées par chaque coiffeur *****/
 
   std::string nom = csv_coiffures[1][0]; // nom 1er du coiffeur
 
@@ -195,7 +196,9 @@ int main() {
 
   // Fin création
 
-  //Début appli
+
+  /***** Début Appli *****/
+
   std::string genreUtilisateur;
   std::string paysUtilisateur;
   std::string villeUtilisateur;
