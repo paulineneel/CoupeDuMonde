@@ -240,9 +240,11 @@ int main() {
   }
 
   std::string coupeChoisie;
-  std::cout << "\n Choix de coupe ";
-  std::getline(std::cin, coupeChoisie);
-  std::cout << coupeChoisie;
+  std::string coupe;
+  std::cout << "\n Choix de coupe " << std::endl;
+  std::cin >> coupeChoisie;
+  std::getline(std::cin,coupe);
+  coupeChoisie = coupeChoisie + coupe;
 
   if (genreUtilisateur == "F")
   {
@@ -252,7 +254,6 @@ int main() {
         {
           for(auto coupe : coifFemme->getCoupesDeCheveux())
           {
-            std::cout << coupeChoisie << "=?" << coupe->getForme();
             if (coupe->getForme() == coupeChoisie)
             {
               std::cout << coif << " : " << coupeChoisie << " = " << coupe->getTarif() << " euros" << std::endl;
@@ -279,27 +280,50 @@ int main() {
   }
 
 
+  // mettre le meilleur prix en valeur
+  // choix coiffeur
+  std::string coifChoisi;
+  std::string coif;
+  std::cout << "\n Choix du coiffeur " << std::endl;
+  std::cin >> coifChoisi;
+  std::getline(std::cin,coif);
+  coifChoisi = coifChoisi + coif;
 
 
 
-  /*
-  for(auto coiffeurF : coiffeurFemmes)
+  if (genreUtilisateur == "F")
   {
-    std::cout << "Coiffeur spécialisé dans les coupes de cheveux pour femmes" << std::endl;
-    std::cout << "- Nom: " << coiffeurF->getNom() << std::endl;
-    std::cout << "- Adresse: " << coiffeurF->getPays() << std::endl;
-    std::cout << "- Adresse: " << coiffeurF->getVille() << std::endl;
-    std::cout << "- Adresse: " << coiffeurF->getAdresse() << std::endl;
-    std::cout << "- Coupes de cheveux proposées:" << std::endl;
-    for (auto coupeDeCheveux : coiffeurF->getCoupesDeCheveux()) 
+    for(auto coiffeurF : coiffeurFemmes)
     {
-        std::cout << "  - " << coupeDeCheveux->description() << " (" << coupeDeCheveux->getTarif() << " euros)" << std::endl;
-        //std::cout << "- Tarif total de la coupe: " << coiffeurF->tarifTotal(true,false) << " euros" << std::endl;
+      if(coifChoisi == coiffeurF->getNom())
+      {
+        std::cout << "Coiffeur spécialisé dans les coupes de cheveux pour femmes" << std::endl;
+        std::cout << "- Nom: " << coiffeurF->getNom() << std::endl;
+        std::cout << "- Pays: " << coiffeurF->getPays() << std::endl;
+        std::cout << "- Ville: " << coiffeurF->getVille() << std::endl;
+        std::cout << "- Adresse: " << coiffeurF->getAdresse() << std::endl; 
+      }    
+      std::cout << std::endl;
     }
-      
-    std::cout << std::endl;
   }
-
+  else
+  {
+    for(auto coiffeurH : coiffeurHommes)
+    {
+      if(coifChoisi == coiffeurH->getNom())
+      {
+        std::cout << "Coiffeur spécialisé dans les coupes de cheveux pour hommes" << std::endl;
+        std::cout << "- Nom: " << coiffeurH->getNom() << std::endl;
+        std::cout << "- Pays: " << coiffeurH->getPays() << std::endl;
+        std::cout << "- Ville: " << coiffeurH->getVille() << std::endl;
+        std::cout << "- Adresse: " << coiffeurH->getAdresse() << std::endl;
+        std::cout << "- Coupes de cheveux proposées:" << std::endl;
+      }
+      std::cout << std::endl;
+    }
+  }
+  /*
+  
   
   for(auto coiffeurH : coiffeurHommes)
   {
