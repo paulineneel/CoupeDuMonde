@@ -4,7 +4,7 @@
 #include <iostream>
 #include <fstream>
 
-
+// changer les chemins d'accès
 #include "/home/portable014/Bureau/neelp_1/MAIN_4_PC/Info/CoupeDuMonde/Coiffeur.h"
 #include "/home/portable014/Bureau/neelp_1/MAIN_4_PC/Info/CoupeDuMonde/CoiffeurSpecialisteFemmes.h"
 #include "/home/portable014/Bureau/neelp_1/MAIN_4_PC/Info/CoupeDuMonde/CoiffeurSpecialisteHommes.h"

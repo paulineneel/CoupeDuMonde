@@ -1,12 +1,19 @@
 #include "CoiffeurSpecialisteFemmes.h"
 #include "CoupeDeCheveuxFemmes.h"
 
+int CoiffeurSpecialisteFemmes::count = 0;
+
 // Constructeurs
-CoiffeurSpecialisteFemmes::CoiffeurSpecialisteFemmes() : Coiffeur() {}
+CoiffeurSpecialisteFemmes::CoiffeurSpecialisteFemmes() : Coiffeur() {
+  this->id_ = count;
+  this->count++;
+}
 
 CoiffeurSpecialisteFemmes::CoiffeurSpecialisteFemmes(std::string nom, std::string adresse, std::string pays, std::string ville)
   : Coiffeur(nom, adresse, pays,ville)
 {
+  this->id_ = count;
+  this->count++;
 }
 
 CoiffeurSpecialisteFemmes::CoiffeurSpecialisteFemmes(std::string nom, std::string adresse, std::string pays, std::string ville, std::vector<CoupeDeCheveuxFemmes *> coupesDeCheveux)
@@ -16,6 +23,8 @@ CoiffeurSpecialisteFemmes::CoiffeurSpecialisteFemmes(std::string nom, std::strin
   this->coupesDeCheveux_ = coupesDeCheveux;
   this->pays_ = pays;
   this->ville_ = ville;
+  this->id_ = count;
+  this->count++;
 }
 
 CoiffeurSpecialisteFemmes::~CoiffeurSpecialisteFemmes()
