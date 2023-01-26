@@ -6,7 +6,7 @@ Notre application permet de comparer les prix proposés par différents coiffeur
 ## Langage utilisé 
 C++
 
-## Execution 
+## Exécution 
 
 Notre dossier "tests" comporte des tests unitaires afin de vérifier le bon fonctionnement de chacune des fonctions. Pour l'exécuter il suffit de se placer dans le dossier et de lancer les deux lignes de codes suivantes :
 
