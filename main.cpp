@@ -12,6 +12,13 @@
 #include <set>
 
 std::string readFileIntoString(const std::string& path) {
+  /*
+  *   @return string
+  *   
+  *   Lis un fichier/une ligne d'un fichier et le transforme en chaine de caractères
+  * 
+  */
+
     auto ss = std::ostringstream{};
     std::ifstream input_file(path);
     if (!input_file.is_open()) {
@@ -25,6 +32,13 @@ std::string readFileIntoString(const std::string& path) {
 
 std::vector<std::vector<std::string>> transformCSVtoString(std::string filename,char del) 
 {
+  /*
+  *   @return vector<vector<string>>
+  *   
+  *   Lis un fichier csv et le transforme en vecteur de chaine de caractères
+  * 
+  */
+
   std::vector<std::vector<std::string>> csv_contents;
   std::string file_contents;
   file_contents = readFileIntoString(filename);
@@ -40,10 +54,8 @@ std::vector<std::vector<std::string>> transformCSVtoString(std::string filename,
     while (std::getline(line, record, del)) 
     {
       items.push_back(record);
-      //std::cout << items[counter] << " " << std::endl;
       counter += 1;
     }
-    //std::cout << "\n" << std::endl;
     csv_contents.push_back(items);
     items.clear();
     counter = 0;
@@ -53,6 +65,13 @@ std::vector<std::vector<std::string>> transformCSVtoString(std::string filename,
 
 bool findInVector(std::vector<std::vector<std::string>> vect, int indSearch, std::string x)
 {
+  /*
+  *   @return bool
+  *   
+  *   renvoie True si l'élément x appartient au vecteur
+  * 
+  */
+
   bool found = false;
   for(auto iterator : vect)
   {
@@ -65,6 +84,13 @@ bool findInVector(std::vector<std::vector<std::string>> vect, int indSearch, std
 
 std::vector<std::string> indInVector(std::vector<std::vector<std::string>> vect, int indSearch, std::string ville, std::string pays)
 {
+  /*
+  *   @return vector<string>
+  *   
+  *   renvoie un vecteur des premiers éléments des vecteurs de vect qui contiennent ville et pays
+  * 
+  */
+
   std::vector<std::string> rep;
   for(auto iterator : vect)
   {
@@ -93,7 +119,8 @@ int main() {
   int nbTotalCoiffure = csv_coiffures.size();
   int nbCoiffeur = csv_coiffeurs.size();
 
-  // Création des coiffeurs
+  /***** Création des coiffeurs *****/
+
   for(int i = 1; i< nbCoiffeur;i++ ) //on commence à 1 car 1ere ligne = nom des attributs
   {     // créer des coiffeurs selon leur specialite
     
@@ -110,7 +137,7 @@ int main() {
 
   }
 
-  // Création des coupes proposées par chaque coiffeur
+  /***** Création des coupes proposées par chaque coiffeur *****/
 
   std::string nom = csv_coiffures[1][0]; // nom 1er du coiffeur
 
@@ -169,7 +196,9 @@ int main() {
 
   // Fin création
 
-  //Début appli
+
+  /***** Début Appli *****/
+
   std::string genreUtilisateur;
   std::string paysUtilisateur;
   std::string villeUtilisateur;
