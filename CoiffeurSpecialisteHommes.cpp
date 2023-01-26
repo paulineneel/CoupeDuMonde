@@ -1,4 +1,5 @@
 #include "CoiffeurSpecialisteHommes.h"
+#include "CoupeDeCheveuxHommes.h"
 
 // Constructeurs
 CoiffeurSpecialisteHommes::CoiffeurSpecialisteHommes() : Coiffeur() {}
@@ -8,20 +9,30 @@ CoiffeurSpecialisteHommes::CoiffeurSpecialisteHommes(std::string nom, std::strin
 {
 }
 
-CoiffeurSpecialisteHommes::CoiffeurSpecialisteHommes(std::string nom, std::string adresse, std::string pays, std::string ville, std::vector<CoupeDeCheveux *> coupesDeCheveux)
-  : Coiffeur(nom, adresse, pays, ville, coupesDeCheveux)
+CoiffeurSpecialisteHommes::CoiffeurSpecialisteHommes(std::string nom, std::string adresse, std::string pays, std::string ville, std::vector<CoupeDeCheveuxHommes *> coupesDeCheveux)
 {
+  this->nom_ = nom;
+  this->adresse_ = adresse;
+  this->coupesDeCheveux_ = coupesDeCheveux;
+  this->pays_ = pays;
+  this->ville_ = ville;
 }
 
 CoiffeurSpecialisteHommes::~CoiffeurSpecialisteHommes()
 {
 }
 
-// Fonctions
-double CoiffeurSpecialisteHommes::tarifTotal(bool meche,bool barbe) const {
-  double tarifTotal = 0;
-  for (auto coupeDeCheveux : coupesDeCheveux_) {
-    tarifTotal += coupeDeCheveux->getTarif();
-  }
-  return tarifTotal;
+std::string CoiffeurSpecialisteHommes::descriptionCoiffeur()
+{
+  return "Coiffeur specialisé dans les coupes pour Hommes";
+}
+
+std::vector<CoupeDeCheveuxHommes*> CoiffeurSpecialisteHommes::getCoupesDeCheveux() const 
+{
+  return this->coupesDeCheveux_;
+}
+
+void CoiffeurSpecialisteHommes::setCoupesDeCheveux(std::vector<CoupeDeCheveuxHommes*> coupesDeCheveux) 
+{
+  this->coupesDeCheveux_ = coupesDeCheveux;
 }

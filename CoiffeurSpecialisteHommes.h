@@ -2,17 +2,22 @@
 #define COIFFEUR_SPECIALISTE_HOMMES_H
 
 #include "Coiffeur.h"
+#include "CoupeDeCheveuxHommes.h"
 
 class CoiffeurSpecialisteHommes : public Coiffeur {
  public:
   // Constructeurs et Destructeur
   CoiffeurSpecialisteHommes();
   CoiffeurSpecialisteHommes(std::string nom, std::string adresse, std::string pays, std::string ville);
-  CoiffeurSpecialisteHommes(std::string nom, std::string adresse, std::string pays, std::string ville, std::vector<CoupeDeCheveux*> coupesDeCheveux);
+  CoiffeurSpecialisteHommes(std::string nom, std::string adresse, std::string pays, std::string ville, std::vector<CoupeDeCheveuxHommes*> coupesDeCheveux);
   ~CoiffeurSpecialisteHommes();
 
-  // Redéfinition de la fonction virtuelle
-  double tarifTotal(bool meche,bool barbe) const override;
+  std::vector<CoupeDeCheveuxHommes*> getCoupesDeCheveux() const;
+  void setCoupesDeCheveux(std::vector<CoupeDeCheveuxHommes*> coupesDeCheveux) ;
+
+  std::vector<CoupeDeCheveuxHommes*> coupesDeCheveux_;
+
+  std::string descriptionCoiffeur() override;
 
 };
 

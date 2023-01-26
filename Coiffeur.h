@@ -25,11 +25,11 @@ class Coiffeur {
   void setPays(std::string pays);
   std::string getVille() const;
   void setVille(std::string ville);
-  std::vector<CoupeDeCheveux*> getCoupesDeCheveux() const;
-  void setCoupesDeCheveux(std::vector<CoupeDeCheveux*> coupesDeCheveux);
 
-  // Fonction virtuelle pure pour obtenir le tarif total des coupes de cheveux proposées par le coiffeur
-  virtual double tarifTotal(bool meche,bool barbe) const = 0;
+  virtual std::string descriptionCoiffeur() = 0;
+  
+
+  
 
  protected:
   // Champs privés de la classe
