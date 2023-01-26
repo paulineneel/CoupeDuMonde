@@ -1,5 +1,5 @@
 # Coupes du monde 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/paulineneel/CoupeDuMonde/blob/main/coupedumonde.png)
 
 Notre application permet de comparer les prix proposés par différents coiffeur en fonction de la coupe de cheveux choisie et du pays ou de la ville dans laquelle on se trouve. Après avoir rentré différentes informations, vous pourrez voir une liste de professionnels s'afficher et vous aurez alors la possibilité de choisir celui qui vous convient le mieux en fonction du tarif proposé.
 
