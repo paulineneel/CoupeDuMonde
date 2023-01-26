@@ -19,6 +19,8 @@ class CoiffeurSpecialisteHommes : public Coiffeur {
 
   std::string descriptionCoiffeur() override;
 
+  static int count;
+
 };
 
 #endif  // COIFFEUR_SPECIALISTE_HOMMES_H

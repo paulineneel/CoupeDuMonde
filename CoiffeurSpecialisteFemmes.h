@@ -18,6 +18,8 @@ class CoiffeurSpecialisteFemmes : public Coiffeur {
   std::vector<CoupeDeCheveuxFemmes*> coupesDeCheveux_;
 
   std::string descriptionCoiffeur() override;
+
+  static int count;
 };
 
 #endif  // COIFFEUR_SPECIALISTE_FEMMES_H

@@ -29,10 +29,9 @@ class Coiffeur {
   virtual std::string descriptionCoiffeur() = 0;
   
 
-  
-
  protected:
   // Champs privés de la classe
+  size_t id_;
   std::string nom_;
   std::string adresse_;
   std::string pays_;
