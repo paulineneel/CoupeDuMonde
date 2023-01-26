@@ -66,14 +66,5 @@ void Coiffeur::setVille(std::string ville)
   this->ville_ = ville;
 }
 
-std::vector<CoupeDeCheveux*> Coiffeur::getCoupesDeCheveux() const 
-{
-  return this->coupesDeCheveux_;
-}
-
-void Coiffeur::setCoupesDeCheveux(std::vector<CoupeDeCheveux*> coupesDeCheveux) 
-{
-  this->coupesDeCheveux_ = coupesDeCheveux;
-}
 
 
