@@ -1,0 +1,97 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>150</x><y>0</y><w>310</w><h>400</h></coordinates><panel_attributes>Coiffeur
+//Package::FatClass
+//{Some Properties}
+--
+
+-Long : id_
+-String : nom_ 
+-String : adresse_
+-String : pays_
+-String : ville_
+-CoupeDeCheveux : coupesDeCheveux
+
+--
+
+/+ Coiffeur()/
+/+ Coiffeur(nom, adresse, pays, ville, coupesDeCheveux)/
+/+ ~Coiffeur()/
+/+ getNom()/
+/+ setNom()/
+/+getAdresse/
+/+setAdresse/
+/+getPays/
+/+setPays/
+/+getVille/
+/+setVille/
+/+getCoupesDeCheveux/
+/+setCoupesDeCheveux/
+/+ virtual double tarifTotal()/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>660</y><w>430</w><h>130</h></coordinates><panel_attributes>_CoiffeurSpecialisteFemmes_
+--
+
+--
+/+ CoiffeurSpecialisteFemmes()/
+/+CoiffeurSpecialisteFemmes(nom, adresse, pays, ville)/
+/+ CoiffeurSpecialisteFemmes(nom, adresse, pays, ville, coupesDeCheveux)/
+/+~CoiffeurSpecialisteFemmes()/
+/+tarifTotal(meche, barbe)/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>390</y><w>100</w><h>290</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>10;10;10;270</additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>480</y><w>470</w><h>120</h></coordinates><panel_attributes>_CoiffeurSpecialisteHommes_
+--
+
+--
+/+ CoiffeurSpecialisteHommes()/
+/+CoiffeurSpecialisteHommes(nom, adresse, pays, ville)/
+/+ CoiffeurSpecialisteHommes(nom, adresse, pays, ville, coupesDeCheveux)/
+/+ double tarifTotal(meche, barbe)/
+
+/+~CoiffeurSpecialisteHommes/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>390</y><w>100</w><h>110</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>830</x><y>770</y><w>510</w><h>140</h></coordinates><panel_attributes>_CoupeDeCheveuxFemmes_
+--
+-bool meches_
+--
+/+CoupeDeCheveuxFemmes()/
+/+CoupeDeCheveuxFemmes(longueur, couleur, forme, tarif,  meches)/
+/+getMeches/
+/+setMeches/
+/+description()/
+/+tarif()/
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1020</x><y>600</y><w>430</w><h>140</h></coordinates><panel_attributes>_CoupeDeCheveuxHommes_
+--
+-bool barbe_
+--
+/+CoupeDeCheveuxHommes()/
+/+CoupeDeCheveuxHommes(longueur, couleur, forme, tarif,  barbe)/
+/+getBarbe/
+/+setBarbe/
+/+description()/
+/+tarif()/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1210</x><y>490</y><w>100</w><h>120</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>900</x><y>490</y><w>100</w><h>300</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>10;10;10;280</additional_attributes></element><element><id>UMLClass</id><coordinates><x>890</x><y>170</y><w>430</w><h>330</h></coordinates><panel_attributes>CoupeDeCheveux
+--
+
+-Long: id_
+-String longeur_
+-String couleur_
+-String forme_
+-Double tarif_ 
+
+--
+
+/+CoupeDeCheveux()/
+/+CoupeDeCheveux(longueur, couleur, forme, tarif)/
+/+~CoupeDeCheveux()/
+/+getLongeur()/
+/+setLongeur()/
+/+getForme()/
+/+setForme()/
+/+getTarif()/
+/+setTarif()/
+/+virtual description()/
+/+virtual tarif()/
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>

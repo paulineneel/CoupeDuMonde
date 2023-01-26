@@ -1,7 +1,7 @@
 CC = g++
 CFLAGS = -Wall -Wextra -std=c++17
 
-SOURCES = CoupeDeCheveux.cpp CoupeDeCheveuxHommes.cpp CoupeDeCheveuxFemmes.cpp Coiffeur.cpp CoiffeurSpecialisteHommes.cpp CoiffeurSpecialisteFemmes.cpp main.cpp
+SOURCES = CoupeDeCheveux.cpp CoupeDeCheveuxHommes.cpp CoupeDeCheveuxFemmes.cpp Coiffeur.cpp CoiffeurSpecialisteHommes.cpp CoiffeurSpecialisteFemmes.cpp main.cpp 
 OBJECTS = $(SOURCES:.cpp=.o)
 EXECUTABLE = coupe_de_cheveux
 
