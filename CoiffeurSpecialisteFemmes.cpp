@@ -1,14 +1,17 @@
 #include "CoiffeurSpecialisteFemmes.h"
 #include "CoupeDeCheveuxFemmes.h"
 
+
+// Initialisation du compteur pour l'id
 int CoiffeurSpecialisteFemmes::count = 0;
 
-// Constructeurs
+// Constructeurs 
 CoiffeurSpecialisteFemmes::CoiffeurSpecialisteFemmes() : Coiffeur() {
   this->id_ = count;
   this->count++;
 }
 
+// Constructeur avec paramètres nom, adresse, pays, ville
 CoiffeurSpecialisteFemmes::CoiffeurSpecialisteFemmes(std::string nom, std::string adresse, std::string pays, std::string ville)
   : Coiffeur(nom, adresse, pays,ville)
 {
@@ -16,6 +19,7 @@ CoiffeurSpecialisteFemmes::CoiffeurSpecialisteFemmes(std::string nom, std::strin
   this->count++;
 }
 
+// Constructeur avec paramètres nom, adresse, pays, ville, coupesDeCheveux
 CoiffeurSpecialisteFemmes::CoiffeurSpecialisteFemmes(std::string nom, std::string adresse, std::string pays, std::string ville, std::vector<CoupeDeCheveuxFemmes *> coupesDeCheveux)
 {
   this->nom_ = nom;
@@ -27,15 +31,18 @@ CoiffeurSpecialisteFemmes::CoiffeurSpecialisteFemmes(std::string nom, std::strin
   this->count++;
 }
 
+// Destructeur
 CoiffeurSpecialisteFemmes::~CoiffeurSpecialisteFemmes()
 {
 }
 
+// fonction qui affiche la despcrition d'un coiffeur spécialisé dans les coupes pour femmes
 std::string CoiffeurSpecialisteFemmes::descriptionCoiffeur()
 {
   return "Coiffeur Specialisé dans les coupes pour Femmes";
 }
 
+// Accesseur et mutateur pour la liste des coupes de cheveux
 std::vector<CoupeDeCheveuxFemmes*> CoiffeurSpecialisteFemmes::getCoupesDeCheveux() const 
 {
   return this->coupesDeCheveux_;
@@ -46,8 +53,7 @@ void CoiffeurSpecialisteFemmes::setCoupesDeCheveux(std::vector<CoupeDeCheveuxFem
   this->coupesDeCheveux_ = coupesDeCheveux;
 }
 
-//Surcharge d'opérateur
-
+//Surcharges d'opérateur
 bool operator==(const CoiffeurSpecialisteFemmes &coiffeurF, const std::string pays)
 {
   return coiffeurF.getPays() == pays;
