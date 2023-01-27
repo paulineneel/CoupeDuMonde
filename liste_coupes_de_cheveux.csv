@@ -1,26 +1,862 @@
 coiffeur;longueur;forme;hommeOufemme;tarif
-Jane Harry;court;carré lisse;F;30.0
-Jane Harry;court;carré ondulé;F;30.0
-Jane Harry;court;carré bouclé;F;30.0
-Jane Harry;court;pixie cut;F;30.0
-Jane Harry;long;dégradé lisse;F;32.0
-Jane Harry;long;dégradé ondulé;F;32.0
-Jane Harry;long;dégradé bouclé;F;32.0
-Jane Harry;mi-long;frange rideau;F;28.0
-Matteo Cattaneo;long;lisse;H;10.0
-Matteo Cattaneo;long;ondulé;H;10.0
-Matteo Cattaneo;long;bouclé;H;10.0
-Matteo Cattaneo;long;lisse;H;10.0
-Matteo Cattaneo;court;lisse;H;12.0
-Matteo Cattaneo;court;ondulé;H;12.0
-Matteo Cattaneo;court;bouclé;H;12.0
-Matteo Cattaneo;court;lisse;H;12.0
-Matteo Cattaneo;mi-long;lisse;H;10.0
-Matteo Cattaneo;mi-long;ondulé;H;10.0
-Matteo Cattaneo;mi-long;bouclé;H;10.0
-Matteo Cattaneo;mi-long;lisse;H;10.0
-Mary Gnocchi;court;pixie cut;F;30.0
-Mary Gnocchi;court;wolf cut;F;32.0
-Mary Gnocchi;court;pointes;F;29.0
-Pierre Frederic;court;pixie cut;F;25.0
-Pierre Frederic;long;pointes;F;20.0
+Jane Harry;mi-long;carré;F;22
+Jane Harry;long;wolfcut;F;51
+Jane Harry;court;pixie cut;F;50
+Jane Harry;long;pointes;F;49
+Jane Harry;mi-long;dégradé;F;104
+Jane Harry;long;layers;F;17
+Jane Harry;mi-long;mulet;F;40
+Matteo Cattaneo;mi-long;carré;H;124
+Matteo Cattaneo;mi-long;wolfcut;H;147
+Matteo Cattaneo;court;pixie cut;H;103
+Matteo Cattaneo;mi-long;pointes;H;101
+Matteo Cattaneo;long;dégradé;H;77
+Matteo Cattaneo;court;layers;H;38
+Matteo Cattaneo;court;mulet;H;36
+Mary Gnocchi;court;carré;F;150
+Mary Gnocchi;mi-long;wolfcut;F;46
+Mary Gnocchi;long;pixie cut;F;17
+Mary Gnocchi;court;pointes;F;89
+Mary Gnocchi;court;dégradé;F;40
+Mary Gnocchi;court;layers;F;34
+Mary Gnocchi;court;mulet;F;138
+Pierre Frederic;court;carré;H;34
+Pierre Frederic;mi-long;wolfcut;H;66
+Pierre Frederic;court;pixie cut;H;36
+Pierre Frederic;long;pointes;H;56
+Pierre Frederic;mi-long;dégradé;H;54
+Pierre Frederic;court;layers;H;46
+Pierre Frederic;court;mulet;H;104
+Théophile Guillou;court;carré;F;113
+Théophile Guillou;court;wolfcut;F;75
+Théophile Guillou;long;pixie cut;F;32
+Théophile Guillou;long;pointes;F;123
+Théophile Guillou;long;dégradé;F;23
+Théophile Guillou;long;layers;F;118
+Théophile Guillou;court;mulet;F;79
+Camille Tanguy;long;carré;F;52
+Camille Tanguy;court;wolfcut;F;38
+Camille Tanguy;court;pixie cut;F;17
+Camille Tanguy;mi-long;pointes;F;30
+Camille Tanguy;mi-long;dégradé;F;50
+Camille Tanguy;long;layers;F;82
+Camille Tanguy;mi-long;mulet;F;130
+Denise Foucher-Mallet;court;carré;H;110
+Denise Foucher-Mallet;court;wolfcut;H;15
+Denise Foucher-Mallet;long;pixie cut;H;37
+Denise Foucher-Mallet;mi-long;pointes;H;53
+Denise Foucher-Mallet;mi-long;dégradé;H;26
+Denise Foucher-Mallet;court;layers;H;51
+Denise Foucher-Mallet;mi-long;mulet;H;48
+Margot de la Meunier;court;carré;H;52
+Margot de la Meunier;court;wolfcut;H;123
+Margot de la Meunier;mi-long;pixie cut;H;54
+Margot de la Meunier;court;pointes;H;147
+Margot de la Meunier;court;dégradé;H;143
+Margot de la Meunier;court;layers;H;82
+Margot de la Meunier;court;mulet;H;81
+Augustin Gimenez;court;carré;F;86
+Augustin Gimenez;court;wolfcut;F;64
+Augustin Gimenez;court;pixie cut;F;58
+Augustin Gimenez;mi-long;pointes;F;71
+Augustin Gimenez;mi-long;dégradé;F;124
+Augustin Gimenez;court;layers;F;104
+Augustin Gimenez;court;mulet;F;108
+Christophe Mallet;mi-long;carré;F;80
+Christophe Mallet;long;wolfcut;F;118
+Christophe Mallet;mi-long;pixie cut;F;22
+Christophe Mallet;court;pointes;F;100
+Christophe Mallet;court;dégradé;F;91
+Christophe Mallet;long;layers;F;92
+Christophe Mallet;mi-long;mulet;F;80
+Madeleine Petitjean;court;carré;H;98
+Madeleine Petitjean;mi-long;wolfcut;H;44
+Madeleine Petitjean;mi-long;pixie cut;H;29
+Madeleine Petitjean;long;pointes;H;82
+Madeleine Petitjean;court;dégradé;H;109
+Madeleine Petitjean;court;layers;H;19
+Madeleine Petitjean;long;mulet;H;88
+Édouard-Stéphane Lemaire;long;carré;H;75
+Édouard-Stéphane Lemaire;court;wolfcut;H;53
+Édouard-Stéphane Lemaire;mi-long;pixie cut;H;132
+Édouard-Stéphane Lemaire;court;pointes;H;116
+Édouard-Stéphane Lemaire;court;dégradé;H;98
+Édouard-Stéphane Lemaire;court;layers;H;133
+Édouard-Stéphane Lemaire;court;mulet;H;124
+Raymond du Gomes;mi-long;carré;F;28
+Raymond du Gomes;mi-long;wolfcut;F;144
+Raymond du Gomes;court;pixie cut;F;73
+Raymond du Gomes;court;pointes;F;140
+Raymond du Gomes;mi-long;dégradé;F;76
+Raymond du Gomes;long;layers;F;35
+Raymond du Gomes;court;mulet;F;42
+Maurice Robin;mi-long;carré;F;66
+Maurice Robin;long;wolfcut;F;23
+Maurice Robin;court;pixie cut;F;133
+Maurice Robin;mi-long;pointes;F;147
+Maurice Robin;court;dégradé;F;22
+Maurice Robin;court;layers;F;88
+Maurice Robin;mi-long;mulet;F;27
+David Hoarau;mi-long;carré;H;31
+David Hoarau;long;wolfcut;H;120
+David Hoarau;court;pixie cut;H;51
+David Hoarau;court;pointes;H;146
+David Hoarau;mi-long;dégradé;H;80
+David Hoarau;mi-long;layers;H;64
+David Hoarau;court;mulet;H;51
+Charlotte Bertin;long;carré;F;121
+Charlotte Bertin;court;wolfcut;F;25
+Charlotte Bertin;long;pixie cut;F;119
+Charlotte Bertin;court;pointes;F;43
+Charlotte Bertin;mi-long;dégradé;F;18
+Charlotte Bertin;court;layers;F;74
+Charlotte Bertin;long;mulet;F;129
+Guillaume Laine;mi-long;carré;F;40
+Guillaume Laine;court;wolfcut;F;92
+Guillaume Laine;mi-long;pixie cut;F;63
+Guillaume Laine;mi-long;pointes;F;131
+Guillaume Laine;mi-long;dégradé;F;34
+Guillaume Laine;long;layers;F;27
+Guillaume Laine;mi-long;mulet;F;106
+Antoinette Pinto du Marion;mi-long;carré;H;127
+Antoinette Pinto du Marion;mi-long;wolfcut;H;107
+Antoinette Pinto du Marion;court;pixie cut;H;48
+Antoinette Pinto du Marion;long;pointes;H;115
+Antoinette Pinto du Marion;court;dégradé;H;79
+Antoinette Pinto du Marion;long;layers;H;146
+Antoinette Pinto du Marion;mi-long;mulet;H;42
+Pauline Pereira;court;carré;F;46
+Pauline Pereira;court;wolfcut;F;103
+Pauline Pereira;mi-long;pixie cut;F;40
+Pauline Pereira;court;pointes;F;95
+Pauline Pereira;mi-long;dégradé;F;46
+Pauline Pereira;long;layers;F;69
+Pauline Pereira;court;mulet;F;70
+Alexandria de la Barthelemy;court;carré;F;76
+Alexandria de la Barthelemy;mi-long;wolfcut;F;51
+Alexandria de la Barthelemy;court;pixie cut;F;69
+Alexandria de la Barthelemy;court;pointes;F;44
+Alexandria de la Barthelemy;mi-long;dégradé;F;98
+Alexandria de la Barthelemy;court;layers;F;50
+Alexandria de la Barthelemy;long;mulet;F;101
+Stéphanie Bouvier-Etienne;court;carré;H;70
+Stéphanie Bouvier-Etienne;long;wolfcut;H;130
+Stéphanie Bouvier-Etienne;mi-long;pixie cut;H;111
+Stéphanie Bouvier-Etienne;long;pointes;H;65
+Stéphanie Bouvier-Etienne;court;dégradé;H;137
+Stéphanie Bouvier-Etienne;court;layers;H;77
+Stéphanie Bouvier-Etienne;mi-long;mulet;H;114
+Manon Godard;court;carré;F;146
+Manon Godard;court;wolfcut;F;52
+Manon Godard;long;pixie cut;F;135
+Manon Godard;long;pointes;F;26
+Manon Godard;long;dégradé;F;141
+Manon Godard;mi-long;layers;F;78
+Manon Godard;long;mulet;F;134
+Nicolas Giraud;long;carré;H;21
+Nicolas Giraud;court;wolfcut;H;72
+Nicolas Giraud;long;pixie cut;H;59
+Nicolas Giraud;court;pointes;H;64
+Nicolas Giraud;mi-long;dégradé;H;38
+Nicolas Giraud;long;layers;H;55
+Nicolas Giraud;long;mulet;H;65
+Édith Ollivier;mi-long;carré;H;49
+Édith Ollivier;court;wolfcut;H;38
+Édith Ollivier;long;pixie cut;H;127
+Édith Ollivier;court;pointes;H;98
+Édith Ollivier;long;dégradé;H;19
+Édith Ollivier;long;layers;H;23
+Édith Ollivier;mi-long;mulet;H;19
+Marguerite Leconte-Ramos;court;carré;H;41
+Marguerite Leconte-Ramos;court;wolfcut;H;126
+Marguerite Leconte-Ramos;long;pixie cut;H;39
+Marguerite Leconte-Ramos;court;pointes;H;99
+Marguerite Leconte-Ramos;long;dégradé;H;80
+Marguerite Leconte-Ramos;mi-long;layers;H;82
+Marguerite Leconte-Ramos;mi-long;mulet;H;35
+Raymond Besson-Delaunay;long;carré;F;40
+Raymond Besson-Delaunay;court;wolfcut;F;76
+Raymond Besson-Delaunay;long;pixie cut;F;64
+Raymond Besson-Delaunay;long;pointes;F;120
+Raymond Besson-Delaunay;long;dégradé;F;62
+Raymond Besson-Delaunay;long;layers;F;74
+Raymond Besson-Delaunay;long;mulet;F;121
+Alex-Claudine Cohen;mi-long;carré;H;63
+Alex-Claudine Cohen;mi-long;wolfcut;H;112
+Alex-Claudine Cohen;mi-long;pixie cut;H;126
+Alex-Claudine Cohen;mi-long;pointes;H;110
+Alex-Claudine Cohen;mi-long;dégradé;H;89
+Alex-Claudine Cohen;mi-long;layers;H;53
+Alex-Claudine Cohen;court;mulet;H;66
+Maurice Ramos-Lecoq;mi-long;carré;F;77
+Maurice Ramos-Lecoq;mi-long;wolfcut;F;43
+Maurice Ramos-Lecoq;court;pixie cut;F;67
+Maurice Ramos-Lecoq;court;pointes;F;150
+Maurice Ramos-Lecoq;long;dégradé;F;54
+Maurice Ramos-Lecoq;court;layers;F;66
+Maurice Ramos-Lecoq;long;mulet;F;147
+Victor Rey du Pelletier;court;carré;F;80
+Victor Rey du Pelletier;court;wolfcut;F;103
+Victor Rey du Pelletier;court;pixie cut;F;63
+Victor Rey du Pelletier;court;pointes;F;34
+Victor Rey du Pelletier;court;dégradé;F;42
+Victor Rey du Pelletier;mi-long;layers;F;97
+Victor Rey du Pelletier;long;mulet;F;26
+Émile Lemaire;court;carré;F;130
+Émile Lemaire;mi-long;wolfcut;F;91
+Émile Lemaire;court;pixie cut;F;41
+Émile Lemaire;long;pointes;F;103
+Émile Lemaire;mi-long;dégradé;F;136
+Émile Lemaire;mi-long;layers;F;43
+Émile Lemaire;long;mulet;F;27
+Olivie Huet;mi-long;carré;H;79
+Olivie Huet;mi-long;wolfcut;H;95
+Olivie Huet;court;pixie cut;H;62
+Olivie Huet;long;pointes;H;37
+Olivie Huet;mi-long;dégradé;H;45
+Olivie Huet;court;layers;H;149
+Olivie Huet;court;mulet;H;69
+Émilie Morvan;mi-long;carré;H;139
+Émilie Morvan;mi-long;wolfcut;H;111
+Émilie Morvan;court;pixie cut;H;94
+Émilie Morvan;mi-long;pointes;H;41
+Émilie Morvan;long;dégradé;H;148
+Émilie Morvan;court;layers;H;113
+Émilie Morvan;court;mulet;H;39
+Thierry Millet du Guillot;court;carré;H;137
+Thierry Millet du Guillot;long;wolfcut;H;91
+Thierry Millet du Guillot;mi-long;pixie cut;H;48
+Thierry Millet du Guillot;court;pointes;H;26
+Thierry Millet du Guillot;mi-long;dégradé;H;120
+Thierry Millet du Guillot;court;layers;H;116
+Thierry Millet du Guillot;court;mulet;H;101
+Virginie de la Lefevre;mi-long;carré;F;26
+Virginie de la Lefevre;court;wolfcut;F;77
+Virginie de la Lefevre;mi-long;pixie cut;F;45
+Virginie de la Lefevre;long;pointes;F;112
+Virginie de la Lefevre;mi-long;dégradé;F;32
+Virginie de la Lefevre;mi-long;layers;F;83
+Virginie de la Lefevre;long;mulet;F;150
+Dorothée Leger;long;carré;F;24
+Dorothée Leger;court;wolfcut;F;133
+Dorothée Leger;long;pixie cut;F;76
+Dorothée Leger;court;pointes;F;15
+Dorothée Leger;mi-long;dégradé;F;41
+Dorothée Leger;long;layers;F;95
+Dorothée Leger;mi-long;mulet;F;69
+Luce Paul Le Lopes;long;carré;H;148
+Luce Paul Le Lopes;court;wolfcut;H;65
+Luce Paul Le Lopes;mi-long;pixie cut;H;86
+Luce Paul Le Lopes;court;pointes;H;41
+Luce Paul Le Lopes;long;dégradé;H;127
+Luce Paul Le Lopes;long;layers;H;38
+Luce Paul Le Lopes;long;mulet;H;90
+Marcel-Laurent Boucher;mi-long;carré;H;102
+Marcel-Laurent Boucher;court;wolfcut;H;18
+Marcel-Laurent Boucher;mi-long;pixie cut;H;108
+Marcel-Laurent Boucher;long;pointes;H;100
+Marcel-Laurent Boucher;long;dégradé;H;57
+Marcel-Laurent Boucher;mi-long;layers;H;126
+Marcel-Laurent Boucher;long;mulet;H;116
+Emmanuel Robert;mi-long;carré;H;73
+Emmanuel Robert;long;wolfcut;H;22
+Emmanuel Robert;court;pixie cut;H;69
+Emmanuel Robert;mi-long;pointes;H;86
+Emmanuel Robert;long;dégradé;H;101
+Emmanuel Robert;mi-long;layers;H;101
+Emmanuel Robert;court;mulet;H;68
+Honoré Legros;long;carré;F;140
+Honoré Legros;mi-long;wolfcut;F;121
+Honoré Legros;court;pixie cut;F;144
+Honoré Legros;mi-long;pointes;F;71
+Honoré Legros;court;dégradé;F;114
+Honoré Legros;mi-long;layers;F;131
+Honoré Legros;court;mulet;F;121
+Arthur de la Aubry;mi-long;carré;F;97
+Arthur de la Aubry;court;wolfcut;F;59
+Arthur de la Aubry;mi-long;pixie cut;F;134
+Arthur de la Aubry;mi-long;pointes;F;26
+Arthur de la Aubry;long;dégradé;F;114
+Arthur de la Aubry;mi-long;layers;F;135
+Arthur de la Aubry;court;mulet;F;81
+Alphonse Charrier;mi-long;carré;F;112
+Alphonse Charrier;mi-long;wolfcut;F;20
+Alphonse Charrier;mi-long;pixie cut;F;72
+Alphonse Charrier;mi-long;pointes;F;33
+Alphonse Charrier;mi-long;dégradé;F;57
+Alphonse Charrier;court;layers;F;17
+Alphonse Charrier;court;mulet;F;103
+Thibault Dias;long;carré;H;53
+Thibault Dias;long;wolfcut;H;21
+Thibault Dias;court;pixie cut;H;40
+Thibault Dias;long;pointes;H;73
+Thibault Dias;long;dégradé;H;139
+Thibault Dias;long;layers;H;88
+Thibault Dias;mi-long;mulet;H;65
+Victoire Le Guilbert;mi-long;carré;F;57
+Victoire Le Guilbert;long;wolfcut;F;121
+Victoire Le Guilbert;court;pixie cut;F;23
+Victoire Le Guilbert;court;pointes;F;98
+Victoire Le Guilbert;mi-long;dégradé;F;122
+Victoire Le Guilbert;long;layers;F;81
+Victoire Le Guilbert;mi-long;mulet;F;108
+Henri Chretien;long;carré;H;25
+Henri Chretien;court;wolfcut;H;141
+Henri Chretien;mi-long;pixie cut;H;142
+Henri Chretien;mi-long;pointes;H;102
+Henri Chretien;long;dégradé;H;110
+Henri Chretien;court;layers;H;102
+Henri Chretien;mi-long;mulet;H;52
+Georges Boucher;court;carré;F;130
+Georges Boucher;mi-long;wolfcut;F;129
+Georges Boucher;court;pixie cut;F;120
+Georges Boucher;court;pointes;F;45
+Georges Boucher;court;dégradé;F;147
+Georges Boucher;long;layers;F;87
+Georges Boucher;court;mulet;F;120
+Claire-Jacqueline Mathieu;mi-long;carré;H;50
+Claire-Jacqueline Mathieu;court;wolfcut;H;56
+Claire-Jacqueline Mathieu;court;pixie cut;H;104
+Claire-Jacqueline Mathieu;long;pointes;H;138
+Claire-Jacqueline Mathieu;long;dégradé;H;71
+Claire-Jacqueline Mathieu;mi-long;layers;H;59
+Claire-Jacqueline Mathieu;long;mulet;H;127
+Susanne Gonzalez;long;carré;H;72
+Susanne Gonzalez;court;wolfcut;H;82
+Susanne Gonzalez;mi-long;pixie cut;H;53
+Susanne Gonzalez;mi-long;pointes;H;85
+Susanne Gonzalez;mi-long;dégradé;H;102
+Susanne Gonzalez;long;layers;H;108
+Susanne Gonzalez;court;mulet;H;51
+Julie Techer;long;carré;H;69
+Julie Techer;mi-long;wolfcut;H;85
+Julie Techer;long;pixie cut;H;45
+Julie Techer;mi-long;pointes;H;108
+Julie Techer;court;dégradé;H;43
+Julie Techer;mi-long;layers;H;83
+Julie Techer;long;mulet;H;134
+Stéphanie Raynaud Le Hoareau;mi-long;carré;H;57
+Stéphanie Raynaud Le Hoareau;long;wolfcut;H;35
+Stéphanie Raynaud Le Hoareau;long;pixie cut;H;77
+Stéphanie Raynaud Le Hoareau;mi-long;pointes;H;132
+Stéphanie Raynaud Le Hoareau;court;dégradé;H;96
+Stéphanie Raynaud Le Hoareau;long;layers;H;35
+Stéphanie Raynaud Le Hoareau;long;mulet;H;147
+Henri Benoit;mi-long;carré;H;17
+Henri Benoit;long;wolfcut;H;26
+Henri Benoit;long;pixie cut;H;142
+Henri Benoit;mi-long;pointes;H;28
+Henri Benoit;long;dégradé;H;104
+Henri Benoit;mi-long;layers;H;66
+Henri Benoit;long;mulet;H;30
+Zacharie Seguin;long;carré;H;54
+Zacharie Seguin;court;wolfcut;H;84
+Zacharie Seguin;long;pixie cut;H;106
+Zacharie Seguin;long;pointes;H;112
+Zacharie Seguin;court;dégradé;H;121
+Zacharie Seguin;mi-long;layers;H;43
+Zacharie Seguin;long;mulet;H;30
+Raymond Becker-David;court;carré;F;110
+Raymond Becker-David;long;wolfcut;F;47
+Raymond Becker-David;long;pixie cut;F;137
+Raymond Becker-David;court;pointes;F;99
+Raymond Becker-David;mi-long;dégradé;F;146
+Raymond Becker-David;court;layers;F;105
+Raymond Becker-David;long;mulet;F;116
+Luc Julien;long;carré;F;92
+Luc Julien;court;wolfcut;F;45
+Luc Julien;mi-long;pixie cut;F;119
+Luc Julien;long;pointes;F;127
+Luc Julien;long;dégradé;F;58
+Luc Julien;court;layers;F;85
+Luc Julien;long;mulet;F;146
+Cécile Dupuy de Blin;mi-long;carré;F;109
+Cécile Dupuy de Blin;mi-long;wolfcut;F;31
+Cécile Dupuy de Blin;mi-long;pixie cut;F;53
+Cécile Dupuy de Blin;mi-long;pointes;F;73
+Cécile Dupuy de Blin;long;dégradé;F;44
+Cécile Dupuy de Blin;mi-long;layers;F;65
+Cécile Dupuy de Blin;mi-long;mulet;F;124
+Claire Bodin;court;carré;H;29
+Claire Bodin;long;wolfcut;H;142
+Claire Bodin;long;pixie cut;H;64
+Claire Bodin;court;pointes;H;69
+Claire Bodin;mi-long;dégradé;H;135
+Claire Bodin;court;layers;H;45
+Claire Bodin;long;mulet;H;108
+Thibaut Besnard;court;carré;H;50
+Thibaut Besnard;court;wolfcut;H;106
+Thibaut Besnard;mi-long;pixie cut;H;100
+Thibaut Besnard;court;pointes;H;148
+Thibaut Besnard;court;dégradé;H;81
+Thibaut Besnard;long;layers;H;104
+Thibaut Besnard;court;mulet;H;63
+Dorothée-Louise Marechal;mi-long;carré;H;145
+Dorothée-Louise Marechal;mi-long;wolfcut;H;79
+Dorothée-Louise Marechal;long;pixie cut;H;21
+Dorothée-Louise Marechal;long;pointes;H;79
+Dorothée-Louise Marechal;court;dégradé;H;44
+Dorothée-Louise Marechal;mi-long;layers;H;87
+Dorothée-Louise Marechal;long;mulet;H;100
+Claire Letellier;mi-long;carré;H;55
+Claire Letellier;mi-long;wolfcut;H;50
+Claire Letellier;long;pixie cut;H;79
+Claire Letellier;court;pointes;H;131
+Claire Letellier;long;dégradé;H;51
+Claire Letellier;mi-long;layers;H;89
+Claire Letellier;court;mulet;H;131
+Hortense Tanguy-Guyon;long;carré;H;55
+Hortense Tanguy-Guyon;long;wolfcut;H;99
+Hortense Tanguy-Guyon;mi-long;pixie cut;H;131
+Hortense Tanguy-Guyon;court;pointes;H;146
+Hortense Tanguy-Guyon;mi-long;dégradé;H;82
+Hortense Tanguy-Guyon;long;layers;H;104
+Hortense Tanguy-Guyon;court;mulet;H;42
+Christelle-Maryse Costa;court;carré;F;46
+Christelle-Maryse Costa;long;wolfcut;F;141
+Christelle-Maryse Costa;court;pixie cut;F;123
+Christelle-Maryse Costa;mi-long;pointes;F;124
+Christelle-Maryse Costa;mi-long;dégradé;F;147
+Christelle-Maryse Costa;mi-long;layers;F;77
+Christelle-Maryse Costa;mi-long;mulet;F;65
+Stéphanie Dupont;long;carré;H;102
+Stéphanie Dupont;mi-long;wolfcut;H;65
+Stéphanie Dupont;long;pixie cut;H;50
+Stéphanie Dupont;long;pointes;H;143
+Stéphanie Dupont;mi-long;dégradé;H;142
+Stéphanie Dupont;mi-long;layers;H;67
+Stéphanie Dupont;court;mulet;H;18
+Margaret Guillet Le Arnaud;mi-long;carré;F;108
+Margaret Guillet Le Arnaud;long;wolfcut;F;38
+Margaret Guillet Le Arnaud;mi-long;pixie cut;F;141
+Margaret Guillet Le Arnaud;mi-long;pointes;F;132
+Margaret Guillet Le Arnaud;long;dégradé;F;136
+Margaret Guillet Le Arnaud;court;layers;F;51
+Margaret Guillet Le Arnaud;mi-long;mulet;F;41
+Antoine Rocher;court;carré;F;52
+Antoine Rocher;court;wolfcut;F;23
+Antoine Rocher;long;pixie cut;F;103
+Antoine Rocher;mi-long;pointes;F;39
+Antoine Rocher;mi-long;dégradé;F;109
+Antoine Rocher;mi-long;layers;F;78
+Antoine Rocher;mi-long;mulet;F;32
+Frédéric Torres-Dijoux;court;carré;H;116
+Frédéric Torres-Dijoux;long;wolfcut;H;115
+Frédéric Torres-Dijoux;mi-long;pixie cut;H;83
+Frédéric Torres-Dijoux;mi-long;pointes;H;128
+Frédéric Torres-Dijoux;long;dégradé;H;137
+Frédéric Torres-Dijoux;court;layers;H;62
+Frédéric Torres-Dijoux;mi-long;mulet;H;100
+Élise du Schneider;mi-long;carré;F;76
+Élise du Schneider;long;wolfcut;F;65
+Élise du Schneider;mi-long;pixie cut;F;33
+Élise du Schneider;long;pointes;F;43
+Élise du Schneider;long;dégradé;F;99
+Élise du Schneider;long;layers;F;80
+Élise du Schneider;court;mulet;F;58
+Augustin Georges;long;carré;F;107
+Augustin Georges;court;wolfcut;F;82
+Augustin Georges;court;pixie cut;F;143
+Augustin Georges;mi-long;pointes;F;41
+Augustin Georges;mi-long;dégradé;F;61
+Augustin Georges;long;layers;F;141
+Augustin Georges;mi-long;mulet;F;83
+Claudine du Parent;long;carré;F;69
+Claudine du Parent;long;wolfcut;F;87
+Claudine du Parent;court;pixie cut;F;114
+Claudine du Parent;long;pointes;F;103
+Claudine du Parent;court;dégradé;F;90
+Claudine du Parent;long;layers;F;90
+Claudine du Parent;long;mulet;F;85
+Brigitte Normand-Neveu;court;carré;H;81
+Brigitte Normand-Neveu;long;wolfcut;H;137
+Brigitte Normand-Neveu;long;pixie cut;H;126
+Brigitte Normand-Neveu;long;pointes;H;66
+Brigitte Normand-Neveu;court;dégradé;H;110
+Brigitte Normand-Neveu;mi-long;layers;H;35
+Brigitte Normand-Neveu;long;mulet;H;20
+Stéphanie Bazin;mi-long;carré;F;70
+Stéphanie Bazin;mi-long;wolfcut;F;144
+Stéphanie Bazin;mi-long;pixie cut;F;31
+Stéphanie Bazin;court;pointes;F;42
+Stéphanie Bazin;court;dégradé;F;20
+Stéphanie Bazin;long;layers;F;33
+Stéphanie Bazin;long;mulet;F;25
+Emmanuel Pasquier;long;carré;H;131
+Emmanuel Pasquier;long;wolfcut;H;75
+Emmanuel Pasquier;court;pixie cut;H;16
+Emmanuel Pasquier;court;pointes;H;15
+Emmanuel Pasquier;mi-long;dégradé;H;71
+Emmanuel Pasquier;long;layers;H;86
+Emmanuel Pasquier;court;mulet;H;139
+Benjamin Turpin;mi-long;carré;F;43
+Benjamin Turpin;court;wolfcut;F;99
+Benjamin Turpin;mi-long;pixie cut;F;105
+Benjamin Turpin;long;pointes;F;88
+Benjamin Turpin;long;dégradé;F;85
+Benjamin Turpin;long;layers;F;94
+Benjamin Turpin;mi-long;mulet;F;84
+Gérard-Éric Chauveau;court;carré;F;83
+Gérard-Éric Chauveau;mi-long;wolfcut;F;111
+Gérard-Éric Chauveau;mi-long;pixie cut;F;38
+Gérard-Éric Chauveau;court;pointes;F;40
+Gérard-Éric Chauveau;long;dégradé;F;20
+Gérard-Éric Chauveau;court;layers;F;118
+Gérard-Éric Chauveau;court;mulet;F;100
+Denise Ribeiro;court;carré;H;74
+Denise Ribeiro;mi-long;wolfcut;H;123
+Denise Ribeiro;mi-long;pixie cut;H;75
+Denise Ribeiro;long;pointes;H;104
+Denise Ribeiro;mi-long;dégradé;H;42
+Denise Ribeiro;court;layers;H;41
+Denise Ribeiro;long;mulet;H;53
+Frédérique Grondin;mi-long;carré;F;122
+Frédérique Grondin;mi-long;wolfcut;F;82
+Frédérique Grondin;mi-long;pixie cut;F;117
+Frédérique Grondin;long;pointes;F;93
+Frédérique Grondin;court;dégradé;F;129
+Frédérique Grondin;long;layers;F;86
+Frédérique Grondin;long;mulet;F;40
+Joseph Marin;long;carré;H;117
+Joseph Marin;court;wolfcut;H;31
+Joseph Marin;court;pixie cut;H;48
+Joseph Marin;court;pointes;H;91
+Joseph Marin;long;dégradé;H;120
+Joseph Marin;mi-long;layers;H;82
+Joseph Marin;court;mulet;H;33
+Gilles-François Remy;court;carré;H;120
+Gilles-François Remy;mi-long;wolfcut;H;72
+Gilles-François Remy;court;pixie cut;H;144
+Gilles-François Remy;court;pointes;H;28
+Gilles-François Remy;mi-long;dégradé;H;55
+Gilles-François Remy;mi-long;layers;H;103
+Gilles-François Remy;mi-long;mulet;H;105
+Maggie-Simone Loiseau;court;carré;F;72
+Maggie-Simone Loiseau;long;wolfcut;F;111
+Maggie-Simone Loiseau;mi-long;pixie cut;F;63
+Maggie-Simone Loiseau;long;pointes;F;87
+Maggie-Simone Loiseau;mi-long;dégradé;F;36
+Maggie-Simone Loiseau;court;layers;F;117
+Maggie-Simone Loiseau;long;mulet;F;106
+Aimé du Marin;long;carré;H;87
+Aimé du Marin;mi-long;wolfcut;H;47
+Aimé du Marin;mi-long;pixie cut;H;19
+Aimé du Marin;court;pointes;H;77
+Aimé du Marin;long;dégradé;H;73
+Aimé du Marin;court;layers;H;127
+Aimé du Marin;long;mulet;H;138
+Guillaume Perez;mi-long;carré;H;20
+Guillaume Perez;court;wolfcut;H;142
+Guillaume Perez;mi-long;pixie cut;H;45
+Guillaume Perez;long;pointes;H;129
+Guillaume Perez;long;dégradé;H;29
+Guillaume Perez;mi-long;layers;H;23
+Guillaume Perez;mi-long;mulet;H;47
+Bertrand Masson;court;carré;H;143
+Bertrand Masson;mi-long;wolfcut;H;32
+Bertrand Masson;long;pixie cut;H;100
+Bertrand Masson;long;pointes;H;146
+Bertrand Masson;court;dégradé;H;148
+Bertrand Masson;court;layers;H;89
+Bertrand Masson;long;mulet;H;97
+Guy Renaud;long;carré;F;20
+Guy Renaud;court;wolfcut;F;101
+Guy Renaud;court;pixie cut;F;60
+Guy Renaud;long;pointes;F;18
+Guy Renaud;long;dégradé;F;55
+Guy Renaud;court;layers;F;35
+Guy Renaud;mi-long;mulet;F;21
+Jean Charrier;long;carré;F;130
+Jean Charrier;mi-long;wolfcut;F;35
+Jean Charrier;court;pixie cut;F;63
+Jean Charrier;mi-long;pointes;F;75
+Jean Charrier;court;dégradé;F;136
+Jean Charrier;long;layers;F;54
+Jean Charrier;long;mulet;F;67
+Sylvie David de Petitjean;court;carré;H;64
+Sylvie David de Petitjean;long;wolfcut;H;58
+Sylvie David de Petitjean;mi-long;pixie cut;H;75
+Sylvie David de Petitjean;court;pointes;H;140
+Sylvie David de Petitjean;mi-long;dégradé;H;94
+Sylvie David de Petitjean;mi-long;layers;H;114
+Sylvie David de Petitjean;court;mulet;H;58
+Grégoire Marchand du Benoit;long;carré;H;28
+Grégoire Marchand du Benoit;mi-long;wolfcut;H;120
+Grégoire Marchand du Benoit;long;pixie cut;H;121
+Grégoire Marchand du Benoit;mi-long;pointes;H;72
+Grégoire Marchand du Benoit;court;dégradé;H;45
+Grégoire Marchand du Benoit;mi-long;layers;H;66
+Grégoire Marchand du Benoit;court;mulet;H;92
+Martine Vidal;court;carré;H;107
+Martine Vidal;mi-long;wolfcut;H;71
+Martine Vidal;long;pixie cut;H;125
+Martine Vidal;long;pointes;H;43
+Martine Vidal;mi-long;dégradé;H;143
+Martine Vidal;mi-long;layers;H;148
+Martine Vidal;long;mulet;H;136
+Suzanne-Isabelle Ruiz;long;carré;F;19
+Suzanne-Isabelle Ruiz;court;wolfcut;F;26
+Suzanne-Isabelle Ruiz;long;pixie cut;F;123
+Suzanne-Isabelle Ruiz;court;pointes;F;82
+Suzanne-Isabelle Ruiz;court;dégradé;F;102
+Suzanne-Isabelle Ruiz;court;layers;F;77
+Suzanne-Isabelle Ruiz;mi-long;mulet;F;130
+Odette Guyot;mi-long;carré;F;26
+Odette Guyot;mi-long;wolfcut;F;38
+Odette Guyot;court;pixie cut;F;72
+Odette Guyot;long;pointes;F;143
+Odette Guyot;mi-long;dégradé;F;105
+Odette Guyot;long;layers;F;118
+Odette Guyot;long;mulet;F;20
+Daniel Pineau de Gautier;long;carré;H;77
+Daniel Pineau de Gautier;mi-long;wolfcut;H;32
+Daniel Pineau de Gautier;long;pixie cut;H;102
+Daniel Pineau de Gautier;long;pointes;H;128
+Daniel Pineau de Gautier;mi-long;dégradé;H;59
+Daniel Pineau de Gautier;mi-long;layers;H;101
+Daniel Pineau de Gautier;court;mulet;H;47
+Léon Herve;long;carré;H;103
+Léon Herve;long;wolfcut;H;54
+Léon Herve;long;pixie cut;H;60
+Léon Herve;mi-long;pointes;H;131
+Léon Herve;mi-long;dégradé;H;42
+Léon Herve;long;layers;H;114
+Léon Herve;long;mulet;H;98
+Roland Le Ramos;court;carré;F;45
+Roland Le Ramos;court;wolfcut;F;96
+Roland Le Ramos;long;pixie cut;F;149
+Roland Le Ramos;long;pointes;F;125
+Roland Le Ramos;mi-long;dégradé;F;15
+Roland Le Ramos;mi-long;layers;F;48
+Roland Le Ramos;mi-long;mulet;F;37
+Colette-Françoise Lacombe;mi-long;carré;F;46
+Colette-Françoise Lacombe;court;wolfcut;F;80
+Colette-Françoise Lacombe;mi-long;pixie cut;F;44
+Colette-Françoise Lacombe;court;pointes;F;107
+Colette-Françoise Lacombe;court;dégradé;F;61
+Colette-Françoise Lacombe;long;layers;F;71
+Colette-Françoise Lacombe;mi-long;mulet;F;34
+Françoise Lemoine de la Carpentier;long;carré;F;68
+Françoise Lemoine de la Carpentier;long;wolfcut;F;15
+Françoise Lemoine de la Carpentier;mi-long;pixie cut;F;38
+Françoise Lemoine de la Carpentier;long;pointes;F;144
+Françoise Lemoine de la Carpentier;long;dégradé;F;78
+Françoise Lemoine de la Carpentier;long;layers;F;79
+Françoise Lemoine de la Carpentier;mi-long;mulet;F;134
+Stéphane-Laurent Mary;court;carré;H;140
+Stéphane-Laurent Mary;court;wolfcut;H;63
+Stéphane-Laurent Mary;long;pixie cut;H;119
+Stéphane-Laurent Mary;court;pointes;H;35
+Stéphane-Laurent Mary;court;dégradé;H;142
+Stéphane-Laurent Mary;long;layers;H;95
+Stéphane-Laurent Mary;long;mulet;H;56
+Tristan Royer de Gomes;court;carré;H;99
+Tristan Royer de Gomes;court;wolfcut;H;28
+Tristan Royer de Gomes;mi-long;pixie cut;H;74
+Tristan Royer de Gomes;mi-long;pointes;H;45
+Tristan Royer de Gomes;long;dégradé;H;89
+Tristan Royer de Gomes;court;layers;H;98
+Tristan Royer de Gomes;court;mulet;H;43
+Luc Rey;long;carré;F;112
+Luc Rey;long;wolfcut;F;147
+Luc Rey;long;pixie cut;F;121
+Luc Rey;court;pointes;F;41
+Luc Rey;long;dégradé;F;101
+Luc Rey;mi-long;layers;F;145
+Luc Rey;long;mulet;F;76
+Robert Le Blin;mi-long;carré;H;123
+Robert Le Blin;long;wolfcut;H;59
+Robert Le Blin;court;pixie cut;H;66
+Robert Le Blin;long;pointes;H;46
+Robert Le Blin;court;dégradé;H;114
+Robert Le Blin;long;layers;H;117
+Robert Le Blin;long;mulet;H;87
+Adrien Andre;long;carré;F;66
+Adrien Andre;court;wolfcut;F;80
+Adrien Andre;court;pixie cut;F;23
+Adrien Andre;mi-long;pointes;F;114
+Adrien Andre;court;dégradé;F;56
+Adrien Andre;long;layers;F;30
+Adrien Andre;court;mulet;F;137
+Benoît Moreau;long;carré;H;64
+Benoît Moreau;mi-long;wolfcut;H;67
+Benoît Moreau;mi-long;pixie cut;H;38
+Benoît Moreau;mi-long;pointes;H;49
+Benoît Moreau;court;dégradé;H;141
+Benoît Moreau;mi-long;layers;H;143
+Benoît Moreau;court;mulet;H;115
+Thomas Leclerc;long;carré;F;143
+Thomas Leclerc;long;wolfcut;F;72
+Thomas Leclerc;long;pixie cut;F;52
+Thomas Leclerc;mi-long;pointes;F;127
+Thomas Leclerc;mi-long;dégradé;F;49
+Thomas Leclerc;mi-long;layers;F;15
+Thomas Leclerc;court;mulet;F;137
+Nathalie Royer de Pineau;court;carré;F;80
+Nathalie Royer de Pineau;court;wolfcut;F;29
+Nathalie Royer de Pineau;mi-long;pixie cut;F;17
+Nathalie Royer de Pineau;court;pointes;F;89
+Nathalie Royer de Pineau;mi-long;dégradé;F;89
+Nathalie Royer de Pineau;mi-long;layers;F;16
+Nathalie Royer de Pineau;mi-long;mulet;F;100
+Margot Le Rocher;mi-long;carré;F;46
+Margot Le Rocher;mi-long;wolfcut;F;111
+Margot Le Rocher;long;pixie cut;F;132
+Margot Le Rocher;long;pointes;F;109
+Margot Le Rocher;court;dégradé;F;40
+Margot Le Rocher;mi-long;layers;F;38
+Margot Le Rocher;mi-long;mulet;F;77
+Andrée Bigot;long;carré;H;82
+Andrée Bigot;court;wolfcut;H;63
+Andrée Bigot;court;pixie cut;H;43
+Andrée Bigot;mi-long;pointes;H;134
+Andrée Bigot;long;dégradé;H;82
+Andrée Bigot;court;layers;H;48
+Andrée Bigot;long;mulet;H;85
+Sébastien Gerard;court;carré;F;80
+Sébastien Gerard;mi-long;wolfcut;F;131
+Sébastien Gerard;long;pixie cut;F;76
+Sébastien Gerard;long;pointes;F;52
+Sébastien Gerard;court;dégradé;F;82
+Sébastien Gerard;court;layers;F;42
+Sébastien Gerard;court;mulet;F;117
+Philippe de la Gros;court;carré;F;37
+Philippe de la Gros;mi-long;wolfcut;F;97
+Philippe de la Gros;long;pixie cut;F;134
+Philippe de la Gros;long;pointes;F;40
+Philippe de la Gros;court;dégradé;F;81
+Philippe de la Gros;long;layers;F;107
+Philippe de la Gros;court;mulet;F;29
+Marc de Launay;long;carré;H;92
+Marc de Launay;long;wolfcut;H;131
+Marc de Launay;court;pixie cut;H;138
+Marc de Launay;mi-long;pointes;H;56
+Marc de Launay;long;dégradé;H;24
+Marc de Launay;mi-long;layers;H;71
+Marc de Launay;long;mulet;H;143
+Éléonore Briand;mi-long;carré;H;54
+Éléonore Briand;long;wolfcut;H;127
+Éléonore Briand;court;pixie cut;H;84
+Éléonore Briand;long;pointes;H;68
+Éléonore Briand;mi-long;dégradé;H;126
+Éléonore Briand;mi-long;layers;H;147
+Éléonore Briand;long;mulet;H;114
+Philippine Fouquet;mi-long;carré;F;24
+Philippine Fouquet;court;wolfcut;F;116
+Philippine Fouquet;mi-long;pixie cut;F;143
+Philippine Fouquet;court;pointes;F;42
+Philippine Fouquet;long;dégradé;F;136
+Philippine Fouquet;court;layers;F;145
+Philippine Fouquet;mi-long;mulet;F;34
+Laurence Renaud;mi-long;carré;H;102
+Laurence Renaud;court;wolfcut;H;91
+Laurence Renaud;mi-long;pixie cut;H;87
+Laurence Renaud;mi-long;pointes;H;89
+Laurence Renaud;mi-long;dégradé;H;31
+Laurence Renaud;mi-long;layers;H;110
+Laurence Renaud;long;mulet;H;116
+Marthe Fontaine;long;carré;F;100
+Marthe Fontaine;long;wolfcut;F;92
+Marthe Fontaine;mi-long;pixie cut;F;70
+Marthe Fontaine;long;pointes;F;25
+Marthe Fontaine;long;dégradé;F;132
+Marthe Fontaine;mi-long;layers;F;33
+Marthe Fontaine;mi-long;mulet;F;23
+Geneviève Mathieu-Laurent;long;carré;H;18
+Geneviève Mathieu-Laurent;court;wolfcut;H;20
+Geneviève Mathieu-Laurent;court;pixie cut;H;140
+Geneviève Mathieu-Laurent;court;pointes;H;33
+Geneviève Mathieu-Laurent;long;dégradé;H;105
+Geneviève Mathieu-Laurent;mi-long;layers;H;81
+Geneviève Mathieu-Laurent;mi-long;mulet;H;57
+Geneviève Didier;mi-long;carré;H;19
+Geneviève Didier;long;wolfcut;H;46
+Geneviève Didier;court;pixie cut;H;20
+Geneviève Didier;long;pointes;H;144
+Geneviève Didier;court;dégradé;H;28
+Geneviève Didier;court;layers;H;29
+Geneviève Didier;long;mulet;H;122
+Caroline Delorme;long;carré;H;67
+Caroline Delorme;mi-long;wolfcut;H;40
+Caroline Delorme;court;pixie cut;H;91
+Caroline Delorme;long;pointes;H;108
+Caroline Delorme;mi-long;dégradé;H;62
+Caroline Delorme;long;layers;H;110
+Caroline Delorme;court;mulet;H;136
+Zacharie Gomes;court;carré;F;117
+Zacharie Gomes;court;wolfcut;F;121
+Zacharie Gomes;mi-long;pixie cut;F;18
+Zacharie Gomes;long;pointes;F;96
+Zacharie Gomes;court;dégradé;F;141
+Zacharie Gomes;court;layers;F;150
+Zacharie Gomes;mi-long;mulet;F;74
+Margaux Gomez;court;carré;F;102
+Margaux Gomez;long;wolfcut;F;108
+Margaux Gomez;long;pixie cut;F;56
+Margaux Gomez;court;pointes;F;122
+Margaux Gomez;mi-long;dégradé;F;68
+Margaux Gomez;mi-long;layers;F;15
+Margaux Gomez;long;mulet;F;92
+François de Herve;court;carré;H;133
+François de Herve;mi-long;wolfcut;H;23
+François de Herve;mi-long;pixie cut;H;59
+François de Herve;court;pointes;H;91
+François de Herve;long;dégradé;H;20
+François de Herve;court;layers;H;69
+François de Herve;mi-long;mulet;H;116
+Amélie Perez;long;carré;H;114
+Amélie Perez;court;wolfcut;H;126
+Amélie Perez;long;pixie cut;H;130
+Amélie Perez;court;pointes;H;38
+Amélie Perez;court;dégradé;H;129
+Amélie Perez;long;layers;H;88
+Amélie Perez;long;mulet;H;61
+Christophe du Reynaud;long;carré;H;51
+Christophe du Reynaud;long;wolfcut;H;122
+Christophe du Reynaud;court;pixie cut;H;25
+Christophe du Reynaud;mi-long;pointes;H;125
+Christophe du Reynaud;long;dégradé;H;19
+Christophe du Reynaud;long;layers;H;58
+Christophe du Reynaud;mi-long;mulet;H;31
+Stéphane Perret;court;carré;H;20
+Stéphane Perret;mi-long;wolfcut;H;88
+Stéphane Perret;long;pixie cut;H;116
+Stéphane Perret;long;pointes;H;138
+Stéphane Perret;long;dégradé;H;129
+Stéphane Perret;long;layers;H;55
+Stéphane Perret;mi-long;mulet;H;121
+Roger Bonnet-Robin;court;carré;F;98
+Roger Bonnet-Robin;mi-long;wolfcut;F;133
+Roger Bonnet-Robin;long;pixie cut;F;124
+Roger Bonnet-Robin;mi-long;pointes;F;127
+Roger Bonnet-Robin;mi-long;dégradé;F;76
+Roger Bonnet-Robin;mi-long;layers;F;22
+Roger Bonnet-Robin;long;mulet;F;106
+Alexandre Leroux;mi-long;carré;H;31
+Alexandre Leroux;long;wolfcut;H;142
+Alexandre Leroux;court;pixie cut;H;145
+Alexandre Leroux;long;pointes;H;85
+Alexandre Leroux;long;dégradé;H;103
+Alexandre Leroux;court;layers;H;45
+Alexandre Leroux;long;mulet;H;68
+Christine Boucher de Seguin;mi-long;carré;H;53
+Christine Boucher de Seguin;long;wolfcut;H;95
+Christine Boucher de Seguin;mi-long;pixie cut;H;60
+Christine Boucher de Seguin;court;pointes;H;111
+Christine Boucher de Seguin;court;dégradé;H;50
+Christine Boucher de Seguin;long;layers;H;41
+Christine Boucher de Seguin;court;mulet;H;72
+Luc Martins;court;carré;F;59
+Luc Martins;court;wolfcut;F;137
+Luc Martins;court;pixie cut;F;57
+Luc Martins;court;pointes;F;138
+Luc Martins;court;dégradé;F;55
+Luc Martins;court;layers;F;110
+Luc Martins;long;mulet;F;89
+Henri Bouchet;long;carré;F;48
+Henri Bouchet;long;wolfcut;F;116
+Henri Bouchet;court;pixie cut;F;104
+Henri Bouchet;long;pointes;F;116
+Henri Bouchet;court;dégradé;F;99
+Henri Bouchet;court;layers;F;89
+Henri Bouchet;long;mulet;F;79
