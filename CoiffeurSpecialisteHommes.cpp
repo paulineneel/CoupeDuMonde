@@ -45,3 +45,18 @@ void CoiffeurSpecialisteHommes::setCoupesDeCheveux(std::vector<CoupeDeCheveuxHom
 {
   this->coupesDeCheveux_ = coupesDeCheveux;
 }
+
+//Surcharge d'opérateurs
+
+bool operator==(const CoiffeurSpecialisteHommes &coiffeurH, const std::string pays)
+{
+  return coiffeurH.getPays() == pays;
+}
+
+std::ostream &operator<<(std::ostream &out, CoiffeurSpecialisteHommes &coiffeurH)
+{
+  std::string message = coiffeurH.descriptionCoiffeur() + "\n" +"- Nom: " + coiffeurH.getNom() + "\n" + "- Pays: " + coiffeurH.getPays() + "\n"
+    + "- Ville: " + coiffeurH.getVille() + "\n" + "- Adresse: " + coiffeurH.getAdresse();
+
+  return out << message;
+}

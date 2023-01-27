@@ -82,7 +82,7 @@ bool findInVector(std::vector<std::vector<std::string>> vect, int indSearch, std
   return found;
 }
 
-std::vector<std::string> indInVector(std::vector<std::vector<std::string>> vect, int indSearch, std::string ville, std::string pays)
+std::vector<std::string> indInVector(std::vector<std::vector<std::string>> vect, int indSearch, std::string ville, std::string pays,std::string genre)
 {
   /*
   *   @return vector<string>
@@ -94,9 +94,10 @@ std::vector<std::string> indInVector(std::vector<std::vector<std::string>> vect,
   std::vector<std::string> rep;
   for(auto iterator : vect)
   {
-    if(iterator[indSearch] == pays)
-      if(iterator[indSearch + 1] == ville)
-        rep.push_back(iterator[0]);
+    if (iterator[indSearch+2] == genre)
+      if(iterator[indSearch] == pays)
+        if(iterator[indSearch + 1] == ville)
+          rep.push_back(iterator[0]);
   }
 
   return rep;
@@ -212,8 +213,12 @@ int main() {
     return 0;
   }
 
+  std::string tmp;
+
   std::cout << "\nDans quel pays vous situez vous ?" << std::endl;
   std::cin >> paysUtilisateur;
+  std::getline(std::cin,tmp);
+  paysUtilisateur += tmp;
   if (!findInVector(csv_coiffeurs,2,paysUtilisateur)){
     std::cout << "ERREUR pays non disponible\n\n" << std::endl; 
     return 0;
@@ -221,13 +226,15 @@ int main() {
 
   std::cout << "\nDans quel ville vous situez vous ?" << std::endl;
   std::cin >> villeUtilisateur;
+  std::getline(std::cin,tmp);
+  villeUtilisateur += tmp;
   if (!findInVector(csv_coiffeurs,3,villeUtilisateur)){ // test imbriqué à faire
     std::cout << "ERREUR ville non disponible\n\n" << std::endl; 
     return 0;
   }
   
   std::set<std::string> coupeDispo;
-  std::vector<std::string> coiffeursDispo = indInVector(csv_coiffeurs,2,villeUtilisateur,paysUtilisateur);
+  std::vector<std::string> coiffeursDispo = indInVector(csv_coiffeurs,2,villeUtilisateur,paysUtilisateur,genreUtilisateur);
 
   if (genreUtilisateur == "F")
   {
@@ -262,7 +269,11 @@ int main() {
   else
     std::cout << "Homme:" << std::endl;
 
-
+  if (coupeDispo.empty())
+  {
+    std::cout << "Pas de coiffeurs disponibles " << std::endl;
+    return 0;
+  }
   for(auto coupeD : coupeDispo)
   {
     std::cout << coupeD << std::endl;
@@ -346,13 +357,11 @@ int main() {
     {
       if(coifChoisi == coiffeurF->getNom())
       {
-        std::cout << coiffeurF->descriptionCoiffeur() << std::endl;
-        std::cout << "- Nom: " << coiffeurF->getNom() << std::endl;
-        std::cout << "- Pays: " << coiffeurF->getPays() << std::endl;
-        std::cout << "- Ville: " << coiffeurF->getVille() << std::endl;
-        std::cout << "- Adresse: " << coiffeurF->getAdresse() << std::endl; 
+       std::cout << *coiffeurF << std::endl;
       }    
       std::cout << std::endl;
+      
+      
     }
   }
   else
@@ -361,12 +370,7 @@ int main() {
     {
       if(coifChoisi == coiffeurH->getNom())
       {
-        std::cout << coiffeurH->descriptionCoiffeur() << std::endl;
-        std::cout << "- Nom: " << coiffeurH->getNom() << std::endl;
-        std::cout << "- Pays: " << coiffeurH->getPays() << std::endl;
-        std::cout << "- Ville: " << coiffeurH->getVille() << std::endl;
-        std::cout << "- Adresse: " << coiffeurH->getAdresse() << std::endl;
-        std::cout << "- Coupes de cheveux proposées:" << std::endl;
+        std::cout << *coiffeurH << std::endl;
       }
       std::cout << std::endl;
     }
