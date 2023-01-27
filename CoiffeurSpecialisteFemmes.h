@@ -22,4 +22,8 @@ class CoiffeurSpecialisteFemmes : public Coiffeur {
   static int count;
 };
 
+bool operator==(const CoiffeurSpecialisteFemmes &coiffeurF, const std::string pays);
+
+std::ostream &operator<<(std::ostream &out, CoiffeurSpecialisteFemmes &coiffeurF);
+
 #endif  // COIFFEUR_SPECIALISTE_FEMMES_H
